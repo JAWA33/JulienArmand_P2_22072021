@@ -12,3 +12,9 @@
 * {
   font-family: "Raleway";
 }
+
+/* Marge externe de la page */
+header,
+main {
+  margin: 2px 50px;
+}
