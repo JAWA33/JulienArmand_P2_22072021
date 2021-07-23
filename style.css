@@ -16,12 +16,12 @@ footer ul :first-child {
   margin-bottom: 20px;
 }
 
-footer li {
+footer ul li {
   font-weight: normal;
   font-size: 0.9em;
   margin-bottom: 10px;
 }
 
-footer li :hover {
+footer ul li :hover {
   color: #0065fc;
 }
