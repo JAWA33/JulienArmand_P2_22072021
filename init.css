@@ -8,13 +8,13 @@ ou à ajouter des éléments temporaires qui seront supprimés lors de l'éditio
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  color: inherit;
 }
 
 /* Representaiton avec bordures des balises : A supprimer avant rendu final */
 
 header,
-main,
-footer {
+main {
   border: 4px solid orange;
 }
 
