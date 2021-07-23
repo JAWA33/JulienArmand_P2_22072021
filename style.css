@@ -2,54 +2,55 @@
 
 /** Style du header */
 
-
-/* Réglages du bloc navigation */
-nav{
-display: flex;
-justify-content: space-between;
-}
-
-/* Réglages de la liste de navigation */
-nav ul{
-  display: flex;
-  flex-direction: row; /*? A voir si nécessaire */ 
-}
-
-/* Réglages des lignes de la navigation */
-
-nav ul li {
-  margin-top: 40px; 
-}
-
-nav ul li a{
-  padding: 40px 25px 0px 25px;
-}
-
-nav ul li :hover{
-border-top: 20px solid #0065fc;
-color: #0065fc;
-}
-
-.registration{
-  color: #0065fc;
-  font-weight: bold;
-}
-
 /* Réglages Logo */
 .logo {
   width: 110px;
   margin-top: 40px;
 }
 
+/* Réglages du bloc navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Réglages de la liste de navigation */
+nav ul {
+  display: flex;
+  flex-direction: row; /*? A voir si nécessaire */
+}
+
+/* Réglages des lignes de la navigation */
+nav ul li {
+  margin-top: 40px;
+}
+
+nav ul li a {
+  padding: 40px 25px 0px 25px;
+}
+
+nav ul li :hover {
+  border-top: 20px solid #0065fc;
+  color: #0065fc;
+}
+
+.registration {
+  color: #0065fc;
+  font-weight: bold; /*? Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+}
+
+/* Réglages titre */
+
+h1 {
+  font-size: 1.6em;
+  font-weight: bold;
+
+  margin: 35px 0px 10px 0px;
+}
 
 
 
-
-
-
-
-
-/*? Style du footer */
+/** Style du footer */
 
 footer {
   display: flex;
@@ -61,12 +62,11 @@ footer {
 
 footer ul :first-child {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: bold; /*? Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
   margin-bottom: 15px;
 }
 
 footer ul li {
-  font-weight: normal;
   font-size: 0.9em;
   margin-bottom: 5px;
 }
