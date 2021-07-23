@@ -11,7 +11,7 @@ ou à ajouter des éléments temporaires qui seront supprimés lors de l'éditio
   color: inherit;
 }
 
-/* Representaiton avec bordures des balises : A supprimer avant rendu final */
+/* Representaiton avec bordures des balises : A supprimer avant rendu final 
 
 header,
 main {
@@ -43,3 +43,5 @@ input,
 i {
   border: 4px solid grey;
 }
+
+*/
