@@ -59,7 +59,6 @@ h1 {
 
 .CitySelection {
   display: flex;
-  flex: row; /*? A voir si nécessaire */
   height: 50px;
   margin: 20px 0px 33px 0px;
 }
@@ -91,7 +90,7 @@ h1 {
 }
 
 .CitySelection__choose::placeholder {
-  color:black;
+  color: black;
 }
 
 /* Bouton rechercher */
@@ -102,17 +101,15 @@ h1 {
   background-color: #0065fc;
   border: none;
   cursor: pointer;
-}
-
-.CitySelection__send p {
+  color: white;
   font-family: "Raleway-bold";
   /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
-  font-size: 1.3em;
-  color: #ffff;
+  font-size: 1.1em;
 }
 
 .CitySelection__send:hover {
   background-color: #deebff;
+  color: #0065fc;
 }
 
 .CitySelection__send:hover p {
