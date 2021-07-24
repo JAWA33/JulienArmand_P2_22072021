@@ -35,8 +35,8 @@ nav {
 }
 
 /* Réglages des lignes de la navigation : Spécification "S'inscrire" */
-.Menu__link--callToAction{
-  font-family: "Raleway-bold"; 
+.Menu__link--callToAction {
+  font-family: "Raleway-bold";
   /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi */
   color: #0065fc;
 }
@@ -49,10 +49,74 @@ nav {
 
 h1 {
   font-family: "Raleway-bold";
-   /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
   font-size: 1.6em;
 
   margin: 35px 0px 10px 0px;
+}
+
+/* Réglages de la recherche */
+
+.CitySelection {
+  display: flex;
+  flex: row; /*? A voir si nécessaire */
+  height: 50px;
+  margin: 20px 0px 33px 0px;
+}
+
+/* Bouton Map */
+
+.CitySelection__map {
+  width: 55px;
+  border-radius: 13px 0px 0px 13px;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.CitySelection__map:hover {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+/* Zone de selection */
+
+.CitySelection__choose {
+  width: 235px;
+  border: #f2f2f2 solid 1px;
+  font-family: "Raleway-bold";
+  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-size: 1.1em;
+  padding-left: 20px;
+}
+
+.CitySelection__choose::placeholder {
+  color:black;
+}
+
+/* Bouton rechercher */
+
+.CitySelection__send {
+  width: 135px;
+  border-radius: 0px 13px 13px 0px;
+  background-color: #0065fc;
+  border: none;
+  cursor: pointer;
+}
+
+.CitySelection__send p {
+  font-family: "Raleway-bold";
+  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-size: 1.3em;
+  color: #ffff;
+}
+
+.CitySelection__send:hover {
+  background-color: #deebff;
+}
+
+.CitySelection__send:hover p {
+  color: #0065fc;
 }
 
 /** Style du footer */
@@ -80,7 +144,3 @@ footer {
 .FooterList__lign:hover {
   color: #0065fc;
 }
-
-
-
-
