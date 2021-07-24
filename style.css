@@ -34,21 +34,32 @@ nav ul li :hover {
   color: #0065fc;
 }
 
-.registration {
+/* Réglages des lignes de la navigation : Spécification "S'inscrire" */
+.registration{
+  font-family: "Raleway-bold"; 
+  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi */
   color: #0065fc;
-  font-weight: bold; /*? Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+}
+
+
+nav ul li:nth-child(3) a {
+  font-family: "Raleway-bold";
+  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  color: #0065fc;
+}
+
+nav ul li:nth-child(3) :hover {
+  color: #deebff;
 }
 
 /* Réglages titre */
 
 h1 {
+  font-family: "Raleway-bold";
   font-size: 1.6em;
-  font-weight: bold;
 
   margin: 35px 0px 10px 0px;
 }
-
-
 
 /** Style du footer */
 
@@ -60,17 +71,23 @@ footer {
   background-color: #f2f2f2;
 }
 
-footer ul :first-child {
-  font-size: 1em;
-  font-weight: bold; /*? Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+/* Block FooterList */
+.FooterList__tittle {
+  font-family: "Raleway-bold";
+  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
-footer ul li {
-  font-size: 0.9em;
+.FooterList__lign {
   margin-bottom: 5px;
+  font-size: 1em;
 }
 
-footer ul li :hover {
+.FooterList__lign:hover {
   color: #0065fc;
 }
+
+
+
+
