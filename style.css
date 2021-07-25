@@ -1,26 +1,32 @@
-/*! Fichier CSS principal, nommage en méthode BEM : Block - Element - Modifier */
+/* Fichier CSS principal, 
+nommage en méthode BEM : 
+Block - Element - Modifier */
 
-/** Style du header */
+/*! Style du header */
 
-/* Réglages Logo */
+/** Réglages Logo */
+
 .Logo {
   width: 110px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
-/* Réglages du bloc navigation */
+/** Réglages du bloc navigation */
+
 nav {
   display: flex;
   justify-content: space-between;
 }
 
-/* Réglages de la liste de navigation */
+/** Réglages de la liste de navigation */
+
 .Menu {
   display: flex;
   flex-direction: row; /*? A voir si nécessaire */
 }
 
-/* Réglages des lignes de la navigation */
+/** Réglages des lignes de la navigation */
+
 .Menu__link {
   margin-top: 40px;
 }
@@ -34,10 +40,10 @@ nav {
   color: #0065fc;
 }
 
-/* Réglages des lignes de la navigation : Spécification "S'inscrire" */
+/** Réglages des lignes de la navigation : Spécification "S'inscrire" */
+
 .Menu__link--callToAction {
-  font-family: "Raleway-bold";
-  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi */
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi */
   color: #0065fc;
 }
 
@@ -45,17 +51,16 @@ nav {
   color: #deebff;
 }
 
-/* Réglages titre */
+/** Réglages titre */
 
 h1 {
-  font-family: "Raleway-bold";
-  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
   font-size: 1.6em;
 
   margin: 35px 0px 10px 0px;
 }
 
-/* Réglages de la recherche */
+/** Réglages de la recherche */
 
 .CitySelection {
   display: flex;
@@ -63,7 +68,7 @@ h1 {
   margin: 20px 0px 33px 0px;
 }
 
-/* Bouton Map */
+/** Bouton Map */
 
 .CitySelection__map {
   width: 55px;
@@ -78,13 +83,12 @@ h1 {
   color: #0065fc;
 }
 
-/* Zone de selection */
+/** Zone de selection */
 
 .CitySelection__choose {
   width: 235px;
   border: #f2f2f2 solid 1px;
-  font-family: "Raleway-bold";
-  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
   font-size: 1.1em;
   padding-left: 20px;
 }
@@ -93,7 +97,7 @@ h1 {
   color: black;
 }
 
-/* Bouton rechercher */
+/** Bouton Rechercher */
 
 .CitySelection__send {
   width: 135px;
@@ -102,8 +106,7 @@ h1 {
   border: none;
   cursor: pointer;
   color: white;
-  font-family: "Raleway-bold";
-  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
   font-size: 1.1em;
 }
 
@@ -116,7 +119,105 @@ h1 {
   color: #0065fc;
 }
 
-/** Style du footer */
+/** Ensemble de filtres */
+
+.Filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.Filters__tittle {
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-size: 1.1em;
+  margin: 0px 30px 0px 13px;
+}
+
+/** Design des boutons filtres */
+
+
+/* Animation */
+.Filters__filterButton *{
+  transition: 400ms all ease-in-out 50ms;
+}
+
+/* CheckBox : non affichée*/
+.Filters__filterButton--checkBox {
+  display: none;
+}
+
+/* Style Filtres*/
+
+.Filters__filterButton--style,
+.Filters__filterButton--bgIcon {
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.Filters__filterButton--style { 
+  height: 48px;
+  background-color: white;
+  border: 2px solid #f2f2f2;
+  position: relative;
+}
+
+.Filters__filterButton{
+    display: inline-block; 
+
+    margin-left: 30px;
+}
+
+.Filters__filterButton--bgIcon {
+  height: 48px;
+  width: 48px;
+  background: #deebff;
+  position: absolute;
+  cursor: pointer;
+}
+
+.Filters__filterButton--themeText {
+    font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+    font-size: 1.1em;
+    padding: 0px 25px 0px 60px;
+    cursor: pointer;
+}
+
+.Filters__filterButton--colorIcon{
+  color: #0065fc;
+}
+
+/* Survol du bouton*/
+.Filters__filterButton--style:hover{
+  border: 2px solid #deebff;
+  background-color: #deebff;
+  cursor: pointer;
+}
+
+
+/* Filtres selectionés :checked*/
+
+.Filters__filterButton--checkBox:checked ~ .Filters__filterButton--style {
+  border: 2px solid #0065fc;
+  background-color: #0065fc;
+}
+
+.Filters__filterButton--checkBox:checked ~ .Filters__filterButton--style .Filters__filterButton--bgIcon {
+  background-color: #0065fc;
+  transform: rotate(360deg);
+}
+
+.Filters__filterButton--checkBox:checked ~ .Filters__filterButton--style .Filters__filterButton--themeText {
+  color: white;
+}
+
+.Filters__filterButton--checkBox:checked ~ .Filters__filterButton--style .Filters__filterButton--colorIcon{
+  color: white;
+}
+
+
+/*! Style du footer */
 
 footer {
   display: flex;
@@ -126,10 +227,10 @@ footer {
   background-color: #f2f2f2;
 }
 
-/* Block FooterList */
+/** Block FooterList */
+
 .FooterList__tittle {
-  font-family: "Raleway-bold";
-  /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
   margin-bottom: 15px;
 }
 

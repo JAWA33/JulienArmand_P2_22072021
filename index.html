@@ -48,7 +48,7 @@
       <p>En plein centre ville ou en pleine nature</p>
 
       <!-- Selection de la ville -->
-
+      <!-- A vérifier utilisation de form à la place de div ???? -->
       <div class="CitySelection">
         <button class="CitySelection__map">
           <i class="fas fa-map-marker-alt fa-lg"></i>
@@ -61,19 +61,104 @@
         <button class="CitySelection__send">Rechercher</button>
       </div>
 
-      <!-- Création des filtres -->
-      <form name="filter" action="#" method="post">
-        <p>Filtres</p>
-        <button><i class="fas fa-money-bill-wave"></i>Economique</button>
-        <button><i class="fas fa-child"></i>Familial</button>
-        <button><i class="fas fa-heart"></i>Romantique</button>
-        <button><i class="fas fa-dog"></i>Animaux autorisées</button>
+      <!-- Création du formulaire de filtration -->
+      <form class="Filters" name="filters" action="#" method="post">
+          <legend class="Filters__tittle">Filtres</legend>
+
+          <!-- Création des boutons -->
+
+          <div class="Filters__filterButton">
+            <input
+              type="checkbox"
+              id="money"
+              class="Filters__filterButton--checkBox"
+            />
+            <div class="Filters__filterButton--style">
+              <label for="money" class="Filters__filterButton--bgIcon">
+                <i
+                  class="
+                    fas
+                    fa-xs fa-money-bill-wave fa-stack-1x
+                    Filters__filterButton--colorIcon
+                  "
+                ></i>
+              </label>
+              <p class="Filters__filterButton--themeText">Économique</p>
+            </div>
+          </div>
+
+          <div class="Filters__filterButton">
+            <input
+              type="checkbox"
+              id="child"
+              class="Filters__filterButton--checkBox"
+            />
+            <div class="Filters__filterButton--style">
+              <label for="child" class="Filters__filterButton--bgIcon">
+                <i
+                  class="
+                    fas
+                    fa-sm fa-child fa-stack-1x
+                    Filters__filterButton--colorIcon
+                  "
+                ></i>
+              </label>
+              <label for="child" class="Filters__filterButton--themeText">Familial</p>
+            </div>
+          </div>
+
+          <div class="Filters__filterButton">
+            <input
+              type="checkbox"
+              id="heart"
+              class="Filters__filterButton--checkBox"
+            />
+            <div class="Filters__filterButton--style">
+              <label for="heart" class="Filters__filterButton--bgIcon">
+                <i
+                  class="
+                    fas
+                    fa-heart fa-sm fa-stack-1x
+                    Filters__filterButton--colorIcon
+                  "
+                ></i>
+              </label>
+              <p class="Filters__filterButton--themeText">Romantique</p>
+            </div>
+          </div>
+
+          <div class="Filters__filterButton">
+            <input
+              id="dog"
+              class="Filters__filterButton--checkBox"
+              type="checkbox"
+            />
+            <div class="Filters__filterButton--style">
+              <label for="dog" class="Filters__filterButton--bgIcon">
+                <i
+                  class="
+                    fas
+                    fa-dog fa-sm fa-stack-1x
+                    Filters__filterButton--colorIcon
+                  "
+                ></i>
+              </label>
+              <p class="Filters__filterButton--themeText">Animaux Autorisés</p>
+            </div>
+          </div>
       </form>
 
+
       <!-- Création information sur la recherche -->
-      <i class="fas fa-info"
-        ><span>Plus de 500 logements sont disponibles dans cette ville</span></i
-      >
+      <div class="Filters__results">
+        <span class="fa-stack fa-sm Filters__results--colorIcon">
+          <i class="far fa-circle fa-stack-2x Filters__results--bgIcon"></i>
+          <i class="fas fa-info fa-sm fa-stack-1x"></i>
+        </span>
+        <p class="Filtres__infoText">
+          Plus de 500 logements sont disponibles dans cette ville
+        </p>
+      </div>
     </header>
 
     <!-- Création corps de la page -->
