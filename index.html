@@ -63,90 +63,57 @@
    
 
       <!-- Création du formulaire de filtration -->
-      <form class="Filters" name="filters" action="#" method="get">
-          <legend class="Filters__tittle">Filtres</legend>
+      <form class="Filters" name="filters" action="#" method="get"> 
+        <label class="Filters__tittle">Filtres</label>
 
-          <!-- Création des boutons -->
-          <!-- Bouton Checkbox Economique -->
-          <button class="Filters__filterButton">
-            <input
+        <!-- Création des boutons -->
+        <!-- Bouton Checkbox Economique -->
+        <div class="Filters__filterButton">
+          <input
               type="checkbox"
               id="money"
               class="Filters__filterButton--checkBox"
             />
-            <div class="Filters__filterButton--style">
-              <label for="money" class="Filters__filterButton--bgIcon">
-                <i
-                  class="
-                    fas
-                    fa-lg fa-money-bill-wave fa-stack-1x
-                    Filters__filterButton--colorIcon
-                  "
-                ></i>
-              </label>
-              <label for="money" class="Filters__filterButton--themeText">Économique</label>
-            </div>
-          </button>
+          <div class="Filters__filterButton--style">
+            <label for="money" class="Filters__filterButton--bgIcon">
+              <i class="fas fa-lg fa-money-bill-wave fa-stack-1x Filters__filterButton--colorIcon "></i>
+            </label>
+            <label for="money" class="Filters__filterButton--themeText">Économique</label>
+          </div>
+        </div>
 
-          <button class="Filters__filterButton">
-            <input
-              type="checkbox"
-              id="child"
-              class="Filters__filterButton--checkBox"
-            />
-            <div class="Filters__filterButton--style">
-              <label for="child" class="Filters__filterButton--bgIcon">
-                <i
-                  class="
-                    fas
-                    fa-lg fa-child fa-stack-1x
-                    Filters__filterButton--colorIcon
-                  "
-                ></i>
-              </label>
-              <label for="child" class="Filters__filterButton--themeText">Familial</label>
-            </div>
-          </button>
+        <!-- Bouton Checkbox Familial -->
+        <div class="Filters__filterButton">
+          <input type="checkbox" id="child" class="Filters__filterButton--checkBox" />
+          <div class="Filters__filterButton--style">
+            <label for="child" class="Filters__filterButton--bgIcon">
+              <i class="fas fa-lg fa-child fa-stack-1x Filters__filterButton--colorIcon"></i>
+            </label>
+            <label for="child" class="Filters__filterButton--themeText">Familial</label>
+          </div>
+        </div>
 
-          <button class="Filters__filterButton">
-            <input
-              type="checkbox"
-              id="heart"
-              class="Filters__filterButton--checkBox"
-            />
-            <div class="Filters__filterButton--style">
-              <label for="heart" class="Filters__filterButton--bgIcon">
-                <i
-                  class="
-                    fas
-                    fa-heart fa-lg fa-stack-1x
-                    Filters__filterButton--colorIcon
-                  "
-                ></i>
-              </label>
-              <label for="heart" class="Filters__filterButton--themeText">Romantique</label>
-            </div>
-          </button>
+        <!-- Bouton Checkbox Romantique -->
+        <div class="Filters__filterButton">
+          <input type="checkbox" id="heart" class="Filters__filterButton--checkBox"/>
+          <div class="Filters__filterButton--style">
+            <label for="heart" class="Filters__filterButton--bgIcon">
+              <i class="fas fa-heart fa-lg fa-stack-1x Filters__filterButton--colorIcon"></i>
+            </label>
+            <label for="heart" class="Filters__filterButton--themeText">Romantique</label>
+          </div>
+        </div>
 
-          <button class="Filters__filterButton">
-            <input
-              id="dog"
-              class="Filters__filterButton--checkBox"
-              type="checkbox"
-            />
-            <div class="Filters__filterButton--style">
-              <label for="dog" class="Filters__filterButton--bgIcon">
-                <i
-                  class="
-                    fas
-                    fa-dog fa-lg fa-stack-1x
-                    Filters__filterButton--colorIcon
-                  "
-                ></i>
-              </label>
-              <label for="dog" class="Filters__filterButton--themeText">Animaux autorisés</p>
-            </div>
-          </button>
+        <!-- Bouton Checkbox Romantique -->
+        <div class="Filters__filterButton">
+          <input id="dog" class="Filters__filterButton--checkBox" type="checkbox"/>
+          <div class="Filters__filterButton--style">
+            <label for="dog" class="Filters__filterButton--bgIcon">
+              <i class="fas fa-dog fa-lg fa-stack-1x Filters__filterButton--colorIcon"></i>
+            </label>
+            <label for="dog" class="Filters__filterButton--themeText">Animaux autorisés</label>
+          </div>
+        </div>
       </form>
 
 
