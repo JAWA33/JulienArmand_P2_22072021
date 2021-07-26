@@ -181,8 +181,8 @@ h1 {
 }
 
 .Filters__filterButton--themeText {
-    font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
     font-size: 1.2em;
+    font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
     padding: 15px 25px 15px 60px;
     cursor: pointer;
 
@@ -237,6 +237,78 @@ align-items: center;
 .Filtres__results--infoText{
   padding-left: 5px;
 }
+
+
+/*! Style du main */
+
+/** Section hebergements*/
+
+.Accommodations{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.Accommodations__allResults{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+
+  width: 69%;
+  min-height: 600px;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  padding:0px 20px;
+}
+
+.Accommodations__allResults--tittle{
+  width: 100%;
+  font-size: 1.35em;
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  
+  margin: 20px 20px;
+}
+
+.Accommodations__allResults__result{
+  
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 20px;
+
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .2);
+}
+
+/** Section les plus populaires*/
+.Accommodations__mostPopular{
+
+  width: 28%;
+  min-height: 600px;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+}
+
+.Accommodations__mostPopular--tittle{
+  font-size: 1.35em;
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  padding: 40px 0px 20px 40px;
+
+}
+/*
+.Accommodations__mostPopular__result{
+  
+  max-width: 340px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 20px;
+
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .2);
+}*/
 /*! Style du footer */
 
 footer {
