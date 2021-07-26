@@ -48,8 +48,8 @@
       <p>En plein centre ville ou en pleine nature</p>
 
       <!-- Selection de la ville -->
-      <!-- A vérifier utilisation de form à la place de div ???? -->
-      <div class="CitySelection">
+      
+      <form class="CitySelection" name="filters" action="#" method="post">
         <button class="CitySelection__map">
           <i class="fas fa-map-marker-alt fa-lg"></i>
         </button>
@@ -59,15 +59,16 @@
           placeholder="Marseille, France"
         />
         <button class="CitySelection__send">Rechercher</button>
-      </div>
+      </form>
+   
 
       <!-- Création du formulaire de filtration -->
-      <form class="Filters" name="filters" action="#" method="post">
+      <form class="Filters" name="filters" action="#" method="get">
           <legend class="Filters__tittle">Filtres</legend>
 
           <!-- Création des boutons -->
-
-          <div class="Filters__filterButton">
+          <!-- Bouton Checkbox Economique -->
+          <button class="Filters__filterButton">
             <input
               type="checkbox"
               id="money"
@@ -78,16 +79,16 @@
                 <i
                   class="
                     fas
-                    fa-xs fa-money-bill-wave fa-stack-1x
+                    fa-lg fa-money-bill-wave fa-stack-1x
                     Filters__filterButton--colorIcon
                   "
                 ></i>
               </label>
-              <p class="Filters__filterButton--themeText">Économique</p>
+              <label for="money" class="Filters__filterButton--themeText">Économique</label>
             </div>
-          </div>
+          </button>
 
-          <div class="Filters__filterButton">
+          <button class="Filters__filterButton">
             <input
               type="checkbox"
               id="child"
@@ -98,16 +99,16 @@
                 <i
                   class="
                     fas
-                    fa-sm fa-child fa-stack-1x
+                    fa-lg fa-child fa-stack-1x
                     Filters__filterButton--colorIcon
                   "
                 ></i>
               </label>
-              <label for="child" class="Filters__filterButton--themeText">Familial</p>
+              <label for="child" class="Filters__filterButton--themeText">Familial</label>
             </div>
-          </div>
+          </button>
 
-          <div class="Filters__filterButton">
+          <button class="Filters__filterButton">
             <input
               type="checkbox"
               id="heart"
@@ -118,16 +119,16 @@
                 <i
                   class="
                     fas
-                    fa-heart fa-sm fa-stack-1x
+                    fa-heart fa-lg fa-stack-1x
                     Filters__filterButton--colorIcon
                   "
                 ></i>
               </label>
-              <p class="Filters__filterButton--themeText">Romantique</p>
+              <label for="heart" class="Filters__filterButton--themeText">Romantique</label>
             </div>
-          </div>
+          </button>
 
-          <div class="Filters__filterButton">
+          <button class="Filters__filterButton">
             <input
               id="dog"
               class="Filters__filterButton--checkBox"
@@ -138,14 +139,14 @@
                 <i
                   class="
                     fas
-                    fa-dog fa-sm fa-stack-1x
+                    fa-dog fa-lg fa-stack-1x
                     Filters__filterButton--colorIcon
                   "
                 ></i>
               </label>
-              <p class="Filters__filterButton--themeText">Animaux Autorisés</p>
+              <label for="dog" class="Filters__filterButton--themeText">Animaux autorisés</p>
             </div>
-          </div>
+          </button>
       </form>
 
 

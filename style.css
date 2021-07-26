@@ -164,7 +164,10 @@ h1 {
 }
 
 .Filters__filterButton{
-    display: inline-block; 
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    font-size: 0.95em;
 
     margin-left: 30px;
 }
@@ -179,9 +182,10 @@ h1 {
 
 .Filters__filterButton--themeText {
     font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
-    font-size: 1.1em;
-    padding: 0px 25px 0px 60px;
+    font-size: 1.2em;
+    padding: 15px 25px 15px 60px;
     cursor: pointer;
+
 }
 
 .Filters__filterButton--colorIcon{
@@ -192,6 +196,7 @@ h1 {
 .Filters__filterButton--style:hover{
   border: 2px solid #deebff;
   background-color: #deebff;
+ 
   cursor: pointer;
 }
 
