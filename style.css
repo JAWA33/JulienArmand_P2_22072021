@@ -273,16 +273,66 @@ align-items: center;
 }
 
 .Accommodations__allResults__result{
-  
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items: center;
   width: 250px;
   height: 200px;
   border-radius: 15px;
   background-color: white;
+  
   margin: 20px;
+  
 
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .2);
 }
 
+.Accommodations__allResults__result--picture{
+ 
+width: 240px;
+height: 110px;
+margin: 5px 0px 5px 0px;
+
+border-radius: 10px 10px 0px 0px;
+}
+
+.Accommodations__allResults__result--info{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  
+}
+
+.Accommodations__allResults__result--name{
+  font-size: 1em;
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  padding-top: 5px;
+  margin-right: 5px;
+}
+
+.Accommodations__allResults__result--price{
+  font-size: 0.9em;
+  padding-top: 5px;
+}
+
+.Accommodations__allResults__result--price strong{
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+}
+
+.Accommodations__allResults__result--rating{
+  font-size: 0.9em;
+  padding-top: 5px;
+  
+}
+
+.Accommodations__allResults__result--rating-fullStar{
+  color: #0065fc;
+}
+
+.Accommodations__allResults__result--rating-emptyStar{
+  color: #f2f2f2;
+}
 /** Section les plus populaires*/
 .Accommodations__mostPopular{
 
