@@ -119,7 +119,7 @@ h1 {
   color: #0065fc;
 }
 
-/** Ensemble de filtres */
+/** Formulaires de filtres */
 
 .Filters {
   display: flex;
@@ -188,7 +188,7 @@ h1 {
 
 }
 
-.Filters__filterButton--colorIcon{
+.Filters__filterButton--colorIcon {
   color: #0065fc;
 }
 
@@ -199,7 +199,6 @@ h1 {
  
   cursor: pointer;
 }
-
 
 /* Filtres selectionés :checked*/
 
@@ -221,7 +220,23 @@ h1 {
   color: white;
 }
 
+/** Résultats de filtration*/
 
+.Filters_results{
+align-items: center;
+}
+
+.Filters__results--colorIcon{
+  color:#0065fc;
+}
+
+.Filters__results--bgIcon{
+  color: #f2f2f2;
+}
+
+.Filtres__results--infoText{
+  padding-left: 5px;
+}
 /*! Style du footer */
 
 footer {

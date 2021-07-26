@@ -48,7 +48,7 @@
       <p>En plein centre ville ou en pleine nature</p>
 
       <!-- Selection de la ville -->
-      
+
       <form class="CitySelection" name="filters" action="#" method="post">
         <button class="CitySelection__map">
           <i class="fas fa-map-marker-alt fa-lg"></i>
@@ -60,72 +60,116 @@
         />
         <button class="CitySelection__send">Rechercher</button>
       </form>
-   
 
       <!-- Création du formulaire de filtration -->
-      <form class="Filters" name="filters" action="#" method="get"> 
+      <form class="Filters" name="filters" action="#" method="get">
         <label class="Filters__tittle">Filtres</label>
 
         <!-- Création des boutons -->
         <!-- Bouton Checkbox Economique -->
         <div class="Filters__filterButton">
           <input
-              type="checkbox"
-              id="money"
-              class="Filters__filterButton--checkBox"
-            />
+            type="checkbox"
+            id="money"
+            class="Filters__filterButton--checkBox"
+          />
           <div class="Filters__filterButton--style">
             <label for="money" class="Filters__filterButton--bgIcon">
-              <i class="fas fa-lg fa-money-bill-wave fa-stack-1x Filters__filterButton--colorIcon "></i>
+              <i
+                class="
+                  fas
+                  fa-lg fa-money-bill-wave fa-stack-1x
+                  Filters__filterButton--colorIcon
+                "
+              ></i>
             </label>
-            <label for="money" class="Filters__filterButton--themeText">Économique</label>
+            <label for="money" class="Filters__filterButton--themeText"
+              >Économique</label
+            >
           </div>
         </div>
 
         <!-- Bouton Checkbox Familial -->
         <div class="Filters__filterButton">
-          <input type="checkbox" id="child" class="Filters__filterButton--checkBox" />
+          <input
+            type="checkbox"
+            id="child"
+            class="Filters__filterButton--checkBox"
+          />
           <div class="Filters__filterButton--style">
             <label for="child" class="Filters__filterButton--bgIcon">
-              <i class="fas fa-lg fa-child fa-stack-1x Filters__filterButton--colorIcon"></i>
+              <i
+                class="
+                  fas
+                  fa-lg fa-child fa-stack-1x
+                  Filters__filterButton--colorIcon
+                "
+              ></i>
             </label>
-            <label for="child" class="Filters__filterButton--themeText">Familial</label>
+            <label for="child" class="Filters__filterButton--themeText"
+              >Familial</label
+            >
           </div>
         </div>
 
         <!-- Bouton Checkbox Romantique -->
         <div class="Filters__filterButton">
-          <input type="checkbox" id="heart" class="Filters__filterButton--checkBox"/>
+          <input
+            type="checkbox"
+            id="heart"
+            class="Filters__filterButton--checkBox"
+          />
           <div class="Filters__filterButton--style">
             <label for="heart" class="Filters__filterButton--bgIcon">
-              <i class="fas fa-heart fa-lg fa-stack-1x Filters__filterButton--colorIcon"></i>
+              <i
+                class="
+                  fas
+                  fa-heart fa-lg fa-stack-1x
+                  Filters__filterButton--colorIcon
+                "
+              ></i>
             </label>
-            <label for="heart" class="Filters__filterButton--themeText">Romantique</label>
+            <label for="heart" class="Filters__filterButton--themeText"
+              >Romantique</label
+            >
           </div>
         </div>
 
-        <!-- Bouton Checkbox Romantique -->
+        <!-- Bouton Checkbox Animaux -->
         <div class="Filters__filterButton">
-          <input id="dog" class="Filters__filterButton--checkBox" type="checkbox"/>
+          <input
+            id="dog"
+            class="Filters__filterButton--checkBox"
+            type="checkbox"
+          />
           <div class="Filters__filterButton--style">
             <label for="dog" class="Filters__filterButton--bgIcon">
-              <i class="fas fa-dog fa-lg fa-stack-1x Filters__filterButton--colorIcon"></i>
+              <i
+                class="
+                  fas
+                  fa-dog fa-lg fa-stack-1x
+                  Filters__filterButton--colorIcon
+                "
+              ></i>
             </label>
-            <label for="dog" class="Filters__filterButton--themeText">Animaux autorisés</label>
+            <label for="dog" class="Filters__filterButton--themeText"
+              >Animaux autorisés</label
+            >
           </div>
         </div>
       </form>
 
-
       <!-- Création information sur la recherche -->
       <div class="Filters__results">
-        <span class="fa-stack fa-sm Filters__results--colorIcon">
+        <label class="fa-stack fa-sm Filters__results--colorIcon">
           <i class="far fa-circle fa-stack-2x Filters__results--bgIcon"></i>
-          <i class="fas fa-info fa-sm fa-stack-1x"></i>
-        </span>
-        <p class="Filtres__infoText">
+          <i
+            class="fas fa-info fa-sm fa-stack-1x "
+          ></i>
+        </label>
+        <label class="Filtres__results--infoText">
           Plus de 500 logements sont disponibles dans cette ville
-        </p>
+        </label>
       </div>
     </header>
 
