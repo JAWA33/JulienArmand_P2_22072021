@@ -30,5 +30,20 @@
 /* Marge externe de la page */
 header,
 main {
-  margin: 2px 50px;
+  margin: 0px 50px;
+  padding-top: 2px;
+}
+
+/* Fixation du header */
+header{
+  position:fixed;
+  width: 95%;
+  top:0;
+  background-color: white; 
+  padding-bottom: 30px;
+}
+
+/* Décalage des sections pour alignement bas du header */
+section{
+  padding-top:430px;
 }
