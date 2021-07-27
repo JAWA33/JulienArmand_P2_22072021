@@ -2,6 +2,22 @@
 nommage en méthode BEM : 
 Block - Element - Modifier */
 
+
+/** Général : Réglages titre */
+
+h1 {
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-size: 1.6em;
+
+  margin: 35px 0px 10px 0px;
+}
+
+h2{
+  font-size: 1.35em;
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+}
+
+
 /*! Style du header */
 
 /** Réglages Logo */
@@ -51,14 +67,7 @@ nav {
   color: #deebff;
 }
 
-/** Réglages titre */
 
-h1 {
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
-  font-size: 1.6em;
-
-  margin: 35px 0px 10px 0px;
-}
 
 /** Réglages de la recherche */
 
@@ -253,48 +262,69 @@ align-items: center;
 
 .Accommodations__allResults{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-content: flex-start;
 
-  width: 69%;
+  width: 66%;
   min-height: 600px;
   background-color: #f2f2f2;
   border-radius: 25px;
-  padding:0px 20px;
+  padding:20px 20px;
 }
 
-.Accommodations__allResults--tittle{
-  width: 100%;
-  font-size: 1.35em;
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
-  
-  margin: 20px 20px;
-}
 
 .Accommodations__allResults__result{
   display: flex;
   flex-direction: column;
   justify-content:start;
   align-items: center;
-  width: 250px;
-  height: 200px;
+  width: 28%;
+  min-width: 247px;
+  height: 199px;
   border-radius: 15px;
   background-color: white;
-  
-  margin: 20px;
-  
-
+  margin: 18px;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .2);
 }
 
-.Accommodations__allResults__result--picture{
- 
-width: 240px;
-height: 110px;
-margin: 5px 0px 5px 0px;
+.Accommodations__allResults--tittle{
+  width: 100%;
+  margin: 20px 20px;
+}
 
-border-radius: 10px 10px 0px 0px;
+
+.Accommodations__allResults__result--pictureStyle{
+  width: 95%; 
+  min-width: 237px;
+  height: 114px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/** Gestion des images d'hébergement **/
+.Accommodations__allResults__result--firstImage{
+  background: no-repeat center/100% url("/Images/Hebergements/Auberge_la_cannebiere.jpg");
+} 
+
+.Accommodations__allResults__result--secondImage{
+  background: no-repeat center/100% url("Images/Hebergements/Hotel_du_port.jpg");
+}
+
+.Accommodations__allResults__result--thirdImage{
+  background: no-repeat center/100% url("Images/Hebergements/Hotel_les_mouettes.jpg");
+}
+
+.Accommodations__allResults__result--fourthImage{
+  background: no-repeat center/100% url("Images/Hebergements/Hotel_de_la_mer.jpg");
+}
+
+.Accommodations__allResults__result--fifthImage{
+  background: no-repeat center/100% url("Images/Hebergements/Auberge_le_panier.jpg");
+}
+
+.Accommodations__allResults__result--sixthImage{
+  background: no-repeat center/100% url("Images/Hebergements/Hotel_chez_Amina.jpg");
 }
 
 .Accommodations__allResults__result--info{
@@ -307,13 +337,13 @@ border-radius: 10px 10px 0px 0px;
 .Accommodations__allResults__result--name{
   font-size: 1em;
   font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
-  padding-top: 5px;
-  margin-right: 5px;
+  padding: 5px 5px 5px 8px;
+  
 }
 
 .Accommodations__allResults__result--price{
   font-size: 0.9em;
-  padding-top: 5px;
+  padding: 0px 5px 4px 12px;
 }
 
 .Accommodations__allResults__result--price strong{
@@ -322,7 +352,7 @@ border-radius: 10px 10px 0px 0px;
 
 .Accommodations__allResults__result--rating{
   font-size: 0.9em;
-  padding-top: 5px;
+  padding: 0px 5px 0px 12px;
   
 }
 
@@ -331,34 +361,126 @@ border-radius: 10px 10px 0px 0px;
 }
 
 .Accommodations__allResults__result--rating-emptyStar{
-  color: #f2f2f2;
+  color: #dfdfdf;
+}
+
+
+.Accommodations__allResults__result--moreResults{
+  width: 100%;
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-size: 1.15em;
+  margin: 20px 20px;
+}
+
+.Accommodations__allResults__result--moreResults:hover{
+  cursor: pointer;
+  color:#0065fc;
 }
 /** Section les plus populaires*/
 .Accommodations__mostPopular{
-
-  width: 28%;
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  min-width: 340px;
   min-height: 600px;
   background-color: #f2f2f2;
   border-radius: 25px;
+  padding:20px;
+}
+
+.Accommodations__mostPopular--textBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 95%;
 }
 
 .Accommodations__mostPopular--tittle{
-  font-size: 1.35em;
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
-  padding: 40px 0px 20px 40px;
-
+  width: 80%;
+  margin: 20px 20px;
 }
-/*
+
+.Accommodations__mostPopular--icon{
+  font-size: 1.6em;
+}
+
 .Accommodations__mostPopular__result{
-  
-  max-width: 340px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ 
+  min-width: 80%;
   height: 150px;
   border-radius: 15px;
   background-color: white;
   margin: 20px;
-
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .2);
-}*/
+}
+
+.Accommodations__mostPopular__result--pictureStyle{
+  width: 40%; 
+  min-width: 135px;
+  height: 140px;
+  margin: 5px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+/** Gestion des images d'hébergement **/
+.Accommodations__mostPopular__result--firstImage{
+  background: no-repeat center/160% url("Images/Hebergements/Hotel_le_soleil_du_matin.jpg");
+} 
+
+.Accommodations__mostPopular__result--secondImage{
+  background: no-repeat center/160% url("Images/Hebergements/Au_coeur_de_leau.jpg");
+}
+
+.Accommodations__mostPopular__result--thirdImage{
+  background: no-repeat center/160% url("Images/Hebergements/Hotel_tout_bleu_et_blanc.jpg");
+}
+
+
+.Accommodations__mostPopular__result--info{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  
+}
+
+.Accommodations__mostPopular__result--name{
+  font-size: 1em;
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  padding: 5px 5px 5px 8px;
+  
+}
+
+.Accommodations__mostPopular__result--price{
+  font-size: 0.9em;
+  padding: 0px 5px 15px 12px;
+}
+
+.Accommodations__mostPopular__result--price strong{
+  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+}
+
+.Accommodations__mostPopular__result--rating{
+  font-size: 0.9em;
+  padding: 22px 5px 0px 12px;
+  
+}
+
+.Accommodations__mostPopular__result--rating-fullStar{
+  color: #0065fc;
+}
+
+.Accommodations__mostPopular__result--rating-emptyStar{
+  color: #dfdfdf;
+}
+
+
+
 /*! Style du footer */
 
 footer {
@@ -372,12 +494,12 @@ footer {
 /** Block FooterList */
 
 .FooterList__tittle {
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-family: "Raleway-bold"; /*?font-weight: bold;Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/  
   margin-bottom: 15px;
 }
 
 .FooterList__lign {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-size: 1em;
 }
 
