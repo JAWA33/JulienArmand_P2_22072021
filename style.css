@@ -2,11 +2,33 @@
 nommage en méthode BEM : 
 Block - Element - Modifier */
 
+/*! Reset Css */
 
-/** Général : Réglages titre */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/*! Général **/
+
+/** Réglages des polices */
+
+/* Appel de la font Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap');
+
+/* Style des textes */
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
 
 h1 {
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+ 
+  font-weight: medium;
   font-size: 1.6em;
 
   margin: 35px 0px 10px 0px;
@@ -14,21 +36,43 @@ h1 {
 
 h2{
   font-size: 1.35em;
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: medium; 
 }
 
 h3{
   font-size: 1.1em;
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: medium;
 }
+
+li{
+  font-weight: normal;
+}
+
+/** Marge externe de la page */
+
+header,
+main {
+  margin: 0px 50px;
+  padding-top: 2px;
+}
+
+/** Fixation du header */
+
+header{
+  position:fixed;
+  width: 95%;
+  top:0;
+  background-color: white; 
+  padding-bottom: 30px;
+}
+
+/** Décalage des sections pour alignement bas du header */
+
+section{
+  padding-top:430px;
+}
+
 /*! Style du header */
-
-/** Réglages Logo */
-
-.Logo {
-  width: 110px;
-  margin-top: 30px;
-}
 
 /** Réglages du bloc navigation */
 
@@ -37,11 +81,18 @@ nav {
   justify-content: space-between;
 }
 
+/** Réglages Logo */
+
+.Logo {
+  width: 110px;
+  margin-top: 30px;
+}
+
 /** Réglages de la liste de navigation */
 
 .Menu {
   display: flex;
-  flex-direction: row; /*? A voir si nécessaire */
+  flex-direction: row;
 }
 
 /** Réglages des lignes de la navigation */
@@ -62,7 +113,7 @@ nav {
 /** Réglages des lignes de la navigation : Spécification "S'inscrire" */
 
 .Menu__link--callToAction {
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi */
+  font-weight: bold;
   color: #0065fc;
 }
 
@@ -100,7 +151,7 @@ nav {
 .CitySelection__choose {
   width: 235px;
   border: #f2f2f2 solid 1px;
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: bold;  
   font-size: 1.1em;
   padding-left: 20px;
 }
@@ -118,7 +169,7 @@ nav {
   border: none;
   cursor: pointer;
   color: white;
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: bold;
   font-size: 1.1em;
 }
 
@@ -141,7 +192,7 @@ nav {
 }
 
 .Filters__tittle {
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: bold;
   font-size: 1.1em;
   margin: 0px 30px 0px 13px;
 }
@@ -194,7 +245,7 @@ nav {
 
 .Filters__filterButton--themeText {
     font-size: 1.2em;
-    font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+    font-weight: bold;
     padding: 15px 25px 15px 60px;
     cursor: pointer;
 
@@ -308,7 +359,7 @@ align-items: center;
 
 /** Gestion des images d'hébergement **/
 .Accommodations__allResults__result--firstImage{
-  background: no-repeat center/cover url("/Images/Hebergements/Auberge_la_cannebiere.jpg");
+  background: no-repeat center/cover url("Images/Hebergements/Auberge_la_cannebiere.jpg");
 } 
 
 .Accommodations__allResults__result--secondImage{
@@ -349,7 +400,7 @@ align-items: center;
 }
 
 .Accommodations__allResults__result--price strong{
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: bold;
 }
 
 .Accommodations__allResults__result--rating{
@@ -369,7 +420,7 @@ align-items: center;
 
 .Accommodations__allResults__result--moreResults{
   width: 100%;
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: bold;
   font-size: 1.15em;
   margin: 20px 20px;
 }
@@ -464,7 +515,7 @@ align-items: center;
 }
 
 .Accommodations__mostPopular__result--price strong{
-  font-family: "Raleway-bold"; /*?font-weight: bold;  Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/
+  font-weight: bold;
 }
 
 .Accommodations__mostPopular__result--rating{
@@ -482,8 +533,6 @@ align-items: center;
 }
 
 /** Section Activités **/
-
-/*? TEST FLEX GROW **/
 
 .activities__results{
   display: flex;
@@ -589,7 +638,7 @@ footer {
 /** Block FooterList */
 
 .FooterList__tittle {
-  font-family: "Raleway-bold"; /*?font-weight: bold;Semble ne pas fonctionner ... je ne comprends pas pourquoi ?*/  
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
