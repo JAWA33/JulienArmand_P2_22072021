@@ -359,27 +359,27 @@ align-items: center;
 
 /** Gestion des images d'hébergement **/
 .Accommodations__allResults__result--firstImage{
-  background: no-repeat center/cover url("Images/Hebergements/Auberge_la_cannebiere.jpg");
+  background: no-repeat center/cover url("Images/Auberge_la_cannebiere.jpg");
 } 
 
 .Accommodations__allResults__result--secondImage{
-  background: no-repeat center/cover url("Images/Hebergements/Hotel_du_port.jpg");
+  background: no-repeat center/cover url("Images/Hotel_du_port.jpg");
 }
 
 .Accommodations__allResults__result--thirdImage{
-  background: no-repeat center/cover url("Images/Hebergements/Hotel_les_mouettes.jpg");
+  background: no-repeat center/cover url("Images/Hotel_les_mouettes.jpg");
 }
 
 .Accommodations__allResults__result--fourthImage{
-  background: no-repeat center/cover url("Images/Hebergements/Hotel_de_la_mer.jpg");
+  background: no-repeat center/cover url("Images/Hotel_de_la_mer.jpg");
 }
 
 .Accommodations__allResults__result--fifthImage{
-  background: no-repeat center/cover url("Images/Hebergements/Auberge_le_panier.jpg");
+  background: no-repeat center/cover url("Images/Auberge_le_panier.jpg");
 }
 
 .Accommodations__allResults__result--sixthImage{
-  background: no-repeat center/cover url("Images/Hebergements/Hotel_chez_Amina.jpg");
+  background: no-repeat center/cover url("Images/Hotel_chez_Amina.jpg");
 }
 
 .Accommodations__allResults__result--info{
@@ -483,15 +483,15 @@ align-items: center;
 
 /** Gestion des images Les plus populaires **/
 .Accommodations__mostPopular__result--firstImage{
-  background: no-repeat center/cover url("Images/Hebergements/Hotel_le_soleil_du_matin.jpg");
+  background: no-repeat center/cover url("Images/Hotel_le_soleil_du_matin.jpg");
 } 
 
 .Accommodations__mostPopular__result--secondImage{
-  background: no-repeat center/cover url("Images/Hebergements/Au_coeur_de_leau.jpg");
+  background: no-repeat center/cover url("Images/Au_coeur_de_leau.jpg");
 }
 
 .Accommodations__mostPopular__result--thirdImage{
-  background: no-repeat center/cover url("Images/Hebergements/Hotel_tout_bleu_et_blanc.jpg");
+  background: no-repeat center/cover url("Images/Hotel_tout_bleu_et_blanc.jpg");
 }
 
 
@@ -595,27 +595,27 @@ align-items: center;
 } 
 
 .activities__block--firstImage{
-  background: no-repeat center/cover url("Images/Activités/Vieux_port.jpg");
+  background: no-repeat center/cover url("Images/Vieux_port.jpg");
 }
 
 .activities__block--secondImage{
-  background: no-repeat center/cover url("Images/Activités/Fort_de_pomegues.jpg");
+  background: no-repeat center/cover url("Images/Fort_de_pomegues.jpg");
 }
 
 .activities__block--thirdImage{
-  background: no-repeat center/cover url("Images/Activités/Iles_du_frioul.jpg");
+  background: no-repeat center/cover url("Images/Iles_du_frioul.jpg");
 }
 
 .activities__block--fourthImage{
-  background: no-repeat center/cover url("Images/Activités/Parc_national_des_calanques.jpg");
+  background: no-repeat center/cover url("Images/Parc_national_des_calanques.jpg");
 } 
 
 .activities__block--fifthImage{
-  background: no-repeat center/cover url("Images/Activités/Notre_de_la_garde.jpg");
+  background: no-repeat center/cover url("Images/Notre_de_la_garde.jpg");
 }
 
 .activities__block--sixthImage{
-  background: no-repeat center/cover url("Images/Activités/Parc_longchamp.jpg");
+  background: no-repeat center/cover url("Images/Parc_longchamp.jpg");
 }
 
 
