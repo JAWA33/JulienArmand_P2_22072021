@@ -655,7 +655,8 @@ footer {
   color: #0065fc;
 }
 
-/*! Responsive design */
+/*! Responsive tous écrans */
+
 
 @media screen and (max-width: 1437px) {
   /** footer */
