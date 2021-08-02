@@ -379,7 +379,7 @@ nav {
 }
 
 .blockResult__lien {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: 100%;
 }
