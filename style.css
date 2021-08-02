@@ -21,12 +21,12 @@ Block - Element - Modifier */
 
 body {
   font-family: "Raleway", sans-serif;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 h1 {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.35em;
 
   margin: 35px 0px 10px 0px;
 }
@@ -53,25 +53,24 @@ li {
 
 /** Marge externe de la page */
 
-header,
 main {
   margin: 0px 50px;
-  padding-top: 2px;
 }
 
 /** Fixation du header */
 
 header {
   position: fixed;
-  width: 95%;
+  width: 100%;
   top: 0;
   background-color: white;
-  padding-bottom: 30px;
+  padding: 2px 40px 30px 50px;
 }
 
 /** Décalage des sections pour alignement bas du header (ancrage) */
 
-section {
+#hebergements,
+#activites {
   padding-top: 430px;
 }
 
@@ -82,14 +81,13 @@ section {
 nav {
   display: flex;
   justify-content: space-between;
-  padding-right: 30px;
 }
 
 /** Réglages Logo */
 
 .logo {
-  width: 110px;
-  margin-top: 30px;
+  width: 97px;
+  margin-top: 40px;
 }
 
 /** Réglages de la liste de navigation */
@@ -106,22 +104,22 @@ nav {
 }
 
 .menu__link a {
-  padding: 40px 25px 0px 25px;
+  padding: 40px 40px 0px 25px;
 }
 
 .menu__link :hover {
-  border-top: 20px solid #0065fc;
+  border-top: 2px solid #0065fc;
   color: #0065fc;
 }
 
 /** Réglages des lignes de la navigation : Spécification "S'inscrire" */
 
 .menu__link--callToAction {
-  font-weight: bold;
+  font-weight: 600;
   color: #0065fc;
 }
 
-.menu__link--callToAction:hover {
+.menu__link--callToAction a:hover {
   color: #deebff;
 }
 
@@ -129,7 +127,7 @@ nav {
 
 .citySelection {
   display: flex;
-  height: 50px;
+  height: 55px;
   margin: 20px 0px 33px 0px;
 }
 
@@ -137,7 +135,7 @@ nav {
 
 .citySelection__map {
   width: 55px;
-  border-radius: 13px 0px 0px 13px;
+  border-radius: 12px 0px 0px 12px;
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
@@ -151,11 +149,11 @@ nav {
 /** Zone de selection */
 
 .citySelection__choose {
-  width: 235px;
+  width: 230px;
   border: #f2f2f2 solid 1px;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-left: 20px;
 }
 
@@ -166,15 +164,22 @@ nav {
 /** Bouton Rechercher */
 
 .citySelection__send {
-  width: 135px;
-  border-radius: 0px 13px 13px 0px;
+  width: 130px;
+  border-radius: 0px 15px 15px 0px;
   background-color: #0065fc;
   border: none;
   cursor: pointer;
   color: white;
+}
+
+.citySelection__send--text {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1.1em;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.citySelection__send--icon {
+  display: none;
 }
 
 .citySelection__send:hover {
@@ -197,8 +202,9 @@ nav {
 
 .filters__tittle {
   font-weight: bold;
-  font-size: 1.1em;
-  margin: 0px 30px 0px 13px;
+  font-size: 1.15em;
+  margin-right: 5px;
+  padding-left: 10px;
 }
 
 /** Design des boutons filtres */
@@ -235,7 +241,7 @@ nav {
   border: none;
   font-size: 0.95em;
 
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .filters__filterButton--bgIcon {
@@ -293,7 +299,8 @@ nav {
 
 /** Résultats de filtration*/
 
-.filters_results {
+.filters__results {
+  display: flex;
   align-items: center;
 }
 
@@ -332,23 +339,23 @@ nav {
   justify-content: space-between;
   align-content: flex-start;
 
-  width: calc(97% - 400px);
+  width: calc(97% - 420px);
 
   background-color: #f2f2f2;
   border-radius: 25px;
-  padding: 20px 20px;
+  padding: 25px;
 }
 
 .accommodations__allResults--tittle {
   width: 100%;
-  margin: 20px 20px;
+  margin: 20px 20px 8px 20px;
 }
 
 .accommodations__allResults--moreResults {
   width: 100%;
   font-weight: bold;
-  font-size: 1.15em;
-  margin: 40px 20px;
+  font-size: 1.1em;
+  margin: 25px 20px;
 }
 
 .accommodations__allResults--moreResults:hover {
@@ -360,7 +367,7 @@ nav {
 .blockResult {
   display: flex;
 
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: white;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2); /*? Style */
 }
@@ -383,7 +390,7 @@ nav {
   align-items: flex-start;
 
   width: 28%;
-  min-width: 247px;
+  min-width: 246px;
   height: 199px;
   margin: 15px;
   padding: 5px;
@@ -394,7 +401,7 @@ nav {
   width: 100%;
   min-width: 237px;
   height: 114px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .blockResult__picture--firstImage-accommodation {
@@ -430,7 +437,7 @@ nav {
 }
 
 .blockResult__info--padding {
-  padding: 10px 0px 5px 15px;
+  padding: 10px 15px;
 }
 
 .blockResult__info--lineSpacing {
@@ -465,18 +472,17 @@ nav {
   justify-content: flex-start; /*? Orientation */
   align-items: flex-start; /*? Orientation */
 
-  min-width: 80%; /*? Dimension bloc */
-  height: 150px; /*? Dimension bloc */
-  margin: 20px 20px 20px 20px; /*? Dimension bloc */
+  height: 140px; /*? Dimension bloc */
+  margin: 15px; /*? Dimension bloc */
   padding: 5px; /*? Dimension bloc */
 }
 
 /** Gestion des images les plus populaires **/
 .blockResult__picture--style-mostPopular {
-  width: 45%;
-
-  height: 140px;
-  border-radius: 10px 0px 0px 10px;
+  width: 40%;
+  min-width: 130px;
+  height: 100%;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .blockResult__picture--firstImage-mostPopular {
@@ -502,8 +508,7 @@ nav {
   display: flex;
   flex-direction: column;
 
-  width: 400px;
-  min-height: 600px;
+  width: 420px;
   background-color: #f2f2f2;
   border-radius: 25px;
   padding: 20px;
@@ -515,11 +520,12 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  width: 95%;
+  width: 100%;
+  padding-right: 20px;
 }
 
 .accommodations__mostPopular--tittle {
-  width: 80%;
+  width: 70%;
   margin: 20px 20px;
 }
 
@@ -527,8 +533,11 @@ nav {
   font-size: 1.4em;
 }
 
-/** Section Activités New **/
+/** Section Activités **/
 
+#activites {
+  margin-top: -380px;
+}
 .activities__tittle {
   width: 100%;
 }
@@ -543,7 +552,7 @@ nav {
   height: 446px;
   width: 100%;
 
-  margin: 20px 0px 60px 0px;
+  margin-top: 25px;
 }
 
 /** Modification des blocs pour activités **/
@@ -597,7 +606,6 @@ nav {
 .blockResult__picture--fourthImage-activities {
   background: no-repeat center/cover
     url("Images/Parc_national_des_calanques.jpg");
-  filter: brightness(140%);
 }
 
 .blockResult__picture--fifthImage-activities {
@@ -609,7 +617,10 @@ nav {
 }
 
 .blockResult__info--lineSpacing-activities {
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  height: 60px;
 }
 
 /*! Style du footer */
@@ -618,21 +629,388 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  padding: 40px 340px 45px 45px;
+  padding: 45px 340px 45px 45px;
   background-color: #f2f2f2;
+
+  margin-top: 60px;
 }
 
 /** Block footerList */
 
+.footerList {
+  width: 290px;
+}
+
 .footerList__tittle {
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-bottom: 18px;
 }
 
 .footerList__lign {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
 .footerList__lign:hover {
   color: #0065fc;
+}
+
+/*! Responsive design */
+
+@media screen and (max-width: 1437px) {
+  /** footer */
+  footer {
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+  }
+
+  /** Hebergements */
+  .blockResult--accommodation {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  /** Hebergements */
+  .blockResult--accommodation {
+    width: 100%;
+  }
+
+  .accommodations__allResults {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1175px) {
+
+  
+  /** Header */
+  .filters {
+    flex-wrap: wrap;
+  }
+
+  .filters__tittle {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .filters__filterButton {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  #hebergements,
+  #activites {
+    padding-top: 490px;
+  }
+
+  .accommodations {
+    margin-bottom: -460px;
+  }
+}
+
+@media screen and (max-width: 1012px) {
+
+  header {
+    position: relative;
+  }
+
+  #hebergements,
+  #activites {
+    padding-top: 10px;
+  }
+
+  .accommodations {
+    margin-bottom: 430px;
+  }
+
+  .activities__results {
+    height: 900px;
+  }
+
+  .blockResult--activities {
+    width: 48%;
+  }
+
+  .blockResult--activities-firstBlock {
+    height: 37%;
+  }
+  .blockResult--activities-secondBlock {
+    height: 25%;
+  }
+  .blockResult--activities-thirdBlock {
+    height: 33%;
+  }
+  .blockResult--activities-fourthBlock {
+    height: 29%;
+  }
+  .blockResult--activities-fifthBlock {
+    height: 37%;
+  }
+  .blockResult--activities-sixthBlock {
+    height: 29%;
+  }
+}
+
+@media screen and (max-width: 909px) {
+  /** Plus populaires */
+  .accommodations {
+    flex-direction: column-reverse;
+    margin-bottom: 400px;
+  }
+
+  .blockResult--accommodation {
+    margin: 20px;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .accommodations__mostPopular {
+    min-width: 350px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .activities {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  /** footer */
+  footer {
+    flex-direction: column;
+  }
+
+  .footerList {
+    margin-bottom: 40px;
+  }
+
+  /** Hebergements */
+  .blockResult--accommodation {
+    width: 100%;
+  }
+
+  .accommodations__allResults {
+    background-color: transparent;
+
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+
+
+  /** Changement de la nav */
+  nav {
+    flex-wrap: wrap;
+    padding-top: 0px;
+  }
+
+  .menu {
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -65px;
+  }
+
+  .menu__link {
+    text-align: center;
+    width: 50%;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .menu__link a {
+    padding-right: 15px;
+  }
+
+  .menu__link--callToAction {
+    text-align: end;
+    margin-right: 0px;
+    padding-right: 0px;
+    border-bottom: none;
+  }
+
+  .menu__link:hover {
+    border-bottom: 3px solid #0065fc;
+    color: #0065fc;
+  }
+
+  .menu__link :hover {
+    border-top: none;
+  }
+
+  .menu__link--callToAction:hover {
+    border-bottom: none;
+  }
+
+  .menu__link--callToAction a:hover {
+    border-top: 2px solid #0065fc;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  h1,
+  p,
+  .logo,
+  .citySelection,
+  .filters,
+  .filters__results {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .blockResult__info--priceSize {
+    margin: 0;
+  }
+
+  .citySelection__send--text {
+    margin: 0;
+  }
+
+  .filters__results--infoText {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 586px) {
+
+
+  h1,
+  p,
+  .logo,
+  .citySelection,
+  .filters,
+  .filters__results {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .filters {
+    margin-bottom: 20px;
+  }
+
+  .filters__filterButton {
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .filters__tittle {
+    font-size: 1.1em;
+  }
+
+  .filters__filterButton--themeText {
+    font-size: 1.05em;
+    padding: 10px 15px 10px 55px;
+  }
+
+  .accommodations__allResults,
+  .activities {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .accommodations__mostPopular,
+  .accommodations__allResults,
+  .activities {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .accommodations__allResults {
+    width: 100%;
+  }
+
+  .activities {
+    margin-bottom: 100px;
+  }
+
+  .activities__tittle {
+    padding-left: 15px;
+  }
+  .activities__results {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .blockResult--accommodation,
+  .blockResult--activities {
+    margin: 15px;
+  }
+
+  .blockResult--activities {
+    width: auto;
+  }
+
+  .blockResult--activities-firstBlock {
+    height: 180px;
+  }
+  .blockResult--activities-secondBlock {
+    height: 180px;
+  }
+  .blockResult--activities-thirdBlock {
+    height: 180px;
+  }
+  .blockResult--activities-fourthBlock {
+    height: 180px;
+  }
+  .blockResult--activities-fifthBlock {
+    height: 180px;
+  }
+  .blockResult--activities-sixthBlock {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .filters__results {
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .citySelection {
+    justify-content: center;
+
+    width: fit-content;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .citySelection__choose {
+    width: calc(100% - 100px);
+    border: none;
+  }
+
+  .citySelection__send {
+    width: 55px;
+    border-radius: 15px;
+    border: 2px solid #0065fc;
+  }
+
+  .citySelection__send--text {
+    display: none;
+  }
+
+  .citySelection__send--icon {
+    display: initial;
+  }
+
+  footer {
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  #activites {
+    margin-bottom: 40px;
+  }
 }

@@ -36,8 +36,8 @@
         <ul class="menu">
           <li class="menu__link"><a href="#hebergements">Hébergements</a></li>
           <li class="menu__link"><a href="#activites">Activités</a></li>
-          <li class="menu__link">
-            <a class="menu__link--callToAction" href="#">S'inscrire</a>
+          <li class="menu__link menu__link--callToAction">
+            <a href="#">S'inscrire</a>
           </li>
         </ul>
       </nav>
@@ -56,7 +56,7 @@
           class="citySelection__choose"
           placeholder="Marseille, France"
         />
-        <button class="citySelection__send">Rechercher</button>
+        <button class="citySelection__send"><i class="fas fa-lg fa-search citySelection__send--icon"></i><span class="citySelection__send--text">Rechercher</span></button>
       </form>
 
       <!-- Création du formulaire de filtration -->
@@ -163,9 +163,9 @@
           <i class="far fa-circle fa-stack-2x filters__results--bgIcon"></i>
           <i class="fas fa-info fa-sm fa-stack-1x"></i>
         </label>
-        <label class="filters__results--infoText">
+        <p class="filters__results--infoText">
           Plus de 500 logements sont disponibles dans cette ville
-        </label>
+        </p>
       </div>
     </header>
 
