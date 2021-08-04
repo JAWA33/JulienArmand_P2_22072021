@@ -28,10 +28,9 @@
   <body>
     <!-- Création entête de la page -->
     <header>
-      
       <!-- Navigation de la page -->
       <nav>
-        <a href="#"
+        <a href="#search"
           ><img class="logo" src="Images/Reservia.svg" alt="Logo_Reservia"
         /></a>
         <ul class="menu">
@@ -42,608 +41,341 @@
           </li>
         </ul>
       </nav>
-
-      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre ville ou en pleine nature</p>
-
-      <!-- Selection de la ville -->
-
-      <form class="citySelection" name="filters" action="#" method="post">
-        <button class="citySelection__map">
-          <i class="fas fa-map-marker-alt fa-lg"></i>
-        </button>
-        <input
-          type="text"
-          class="citySelection__choose"
-          placeholder="Marseille, France"
-        />
-        <button class="citySelection__send"><i class="fas fa-lg fa-search citySelection__send--icon"></i><span class="citySelection__send--text">Rechercher</span></button>
-      </form>
-
-      <!-- Création du formulaire de filtration -->
-      <form class="filters" name="filters" action="#" method="get">
-        <label class="filters__tittle">Filtres</label>
-
-        <!-- Création des boutons -->
-        <!-- Bouton Checkbox Economique -->
-        <div class="filters__filterButton">
-          <input
-            type="checkbox"
-            id="money"
-            class="filters__filterButton--checkBox"
-          />
-          <div class="filters__filterButton--style">
-            <label for="money" class="filters__filterButton--bgIcon">
-              <i
-                class="
-                  fas
-                  fa-lg fa-money-bill-wave fa-stack-1x
-                  filters__filterButton--colorIcon
-                "
-              ></i>
-            </label>
-            <label for="money" class="filters__filterButton--themeText"
-              >Économique</label
-            >
-          </div>
-        </div>
-
-        <!-- Bouton Checkbox Familial -->
-        <div class="filters__filterButton">
-          <input
-            type="checkbox"
-            id="child"
-            class="filters__filterButton--checkBox"
-          />
-          <div class="filters__filterButton--style">
-            <label for="child" class="filters__filterButton--bgIcon">
-              <i
-                class="
-                  fas
-                  fa-lg fa-child fa-stack-1x
-                  filters__filterButton--colorIcon
-                "
-              ></i>
-            </label>
-            <label for="child" class="filters__filterButton--themeText"
-              >Familial</label
-            >
-          </div>
-        </div>
-
-        <!-- Bouton Checkbox Romantique -->
-        <div class="filters__filterButton">
-          <input
-            type="checkbox"
-            id="heart"
-            class="filters__filterButton--checkBox"
-          />
-          <div class="filters__filterButton--style">
-            <label for="heart" class="filters__filterButton--bgIcon">
-              <i
-                class="
-                  fas
-                  fa-heart fa-lg fa-stack-1x
-                  filters__filterButton--colorIcon
-                "
-              ></i>
-            </label>
-            <label for="heart" class="filters__filterButton--themeText"
-              >Romantique</label
-            >
-          </div>
-        </div>
-
-        <!-- Bouton Checkbox Animaux -->
-        <div class="filters__filterButton">
-          <input
-            id="dog"
-            class="filters__filterButton--checkBox"
-            type="checkbox"
-          />
-          <div class="filters__filterButton--style">
-            <label for="dog" class="filters__filterButton--bgIcon">
-              <i
-                class="
-                  fas
-                  fa-dog fa-lg fa-stack-1x
-                  filters__filterButton--colorIcon
-                "
-              ></i>
-            </label>
-            <label for="dog" class="filters__filterButton--themeText"
-              >Animaux autorisés</label
-            >
-          </div>
-        </div>
-      </form>
-
-      <!-- Création information sur la recherche -->
-      <div class="filters__results">
-        <label class="fa-stack fa-sm filters__results--colorIcon">
-          <i class="far fa-circle fa-stack-2x filters__results--bgIcon"></i>
-          <i class="fas fa-info fa-sm fa-stack-1x"></i>
-        </label>
-        <p class="filters__results--infoText">
-          Plus de 500 logements sont disponibles dans cette ville
-        </p>
-      </div>
     </header>
 
     <!-- Création corps de la page -->
     <main>
+      <section id="search">
+        <h1 class="search__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="search__subTitle">En plein centre ville ou en pleine nature</p>
+        <!-- Selection de la ville -->
+        <form class="citySelection" name="research" action="#" method="post">
+          <button class="citySelection__map">
+            <i class="fas fa-map-marker-alt fa-lg"></i>
+          </button>
+          <input type="text" class="citySelection__choose" placeholder="Marseille, France"/>
+          <button class="citySelection__send">
+            <i class="citySelection__send--icon fas fa-lg fa-search "></i>
+            <span class="citySelection__send--text">Rechercher</span>
+          </button>
+        </form>
+      </section>
+
+      <section id="filter">
+        <!-- Création du formulaire de filtration -->
+        <form class="filters" name="filters" action="#" method="get">
+          <label class="filters__title">Filtres</label>
+          <!-- Création des boutons -->
+          <!-- Bouton Checkbox Economique -->
+          <div class="filters__filterButton">
+            <input type="checkbox" id="money" class="filters__filterButton--checkBox"/>
+            <div class="filters__filterButton--style">
+              <label for="money" class="filters__filterButton--bgIcon">
+                <i class="fas fa-lg fa-money-bill-wave fa-stack-1x filters__filterButton--colorIcon"></i>
+              </label>
+              <label for="money" class="filters__filterButton--themeText">Économique</label>
+            </div>
+          </div>
+
+          <!-- Bouton Checkbox Familial -->
+          <div class="filters__filterButton">
+            <input type="checkbox" id="child" class="filters__filterButton--checkBox"/>
+            <div class="filters__filterButton--style">
+              <label for="child" class="filters__filterButton--bgIcon">
+                <i class="fas fa-lg fa-child fa-stack-1x filters__filterButton--colorIcon"></i>
+              </label>
+              <label for="child" class="filters__filterButton--themeText">Familial</label>
+            </div>
+          </div>
+
+          <!-- Bouton Checkbox Romantique -->
+          <div class="filters__filterButton">
+            <input type="checkbox" id="heart" class="filters__filterButton--checkBox"/>
+            <div class="filters__filterButton--style">
+              <label for="heart" class="filters__filterButton--bgIcon">
+                <i class="fas fa-heart fa-lg fa-stack-1x filters__filterButton--colorIcon"></i>
+              </label>
+              <label for="heart" class="filters__filterButton--themeText">Romantique</label>
+            </div>
+          </div>
+
+          <!-- Bouton Checkbox Animaux -->
+          <div class="filters__filterButton">
+            <input id="dog" class="filters__filterButton--checkBox" type="checkbox"/>
+            <div class="filters__filterButton--style">
+              <label for="dog" class="filters__filterButton--bgIcon">
+                <i class="fas fa-dog fa-lg fa-stack-1x filters__filterButton--colorIcon"></i>
+              </label>
+              <label for="dog" class="filters__filterButton--themeText">Animaux autorisés</label>
+            </div>
+          </div>
+        </form>
+
+        <!-- Création information sur la recherche -->
+        <div class="filters__results">
+          <label class="fa-stack fa-sm filters__results--colorIcon">
+            <i class="far fa-circle fa-stack-2x filters__results--bgIcon"></i>
+            <i class="fas fa-info fa-sm fa-stack-1x"></i>
+          </label>
+          <p class="filters__results--infoText">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
+      </section>
+
       <!-- Section Hébergements -->
       <section id="hebergements" class="accommodations">
-        <!--! ATTENTION validateur W3C : Titre à donner à la section-->
-        <h2 class="accommodations-displayNone">Hebergements</h2>
+        <!--! pourvalidateur W3C : Titre à donner à la section-->
+        <h2 class="accommodations__sectionTitle--displayNone">Hebergements</h2>
         <!-- Selection Hebergements -->
         <article class="accommodations__allResults">
           <h2 class="accommodations__allResults--tittle">
             Hébergements à Marseille
           </h2>
+
           <!-- Bloc hotel1 -->
-          <div class="blockResult blockResult--accommodation">
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-accommodation
-                  blockResult__picture--firstImage-accommodation
-                "
-              ></div>
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">
-                  Auberge la Cannebière
-                </h3>
-                <p class="blockResult__info--priceSize">
-                  Nuit à partir de <strong>25€</strong>
+          <div class="accommodations__blockResult">
+            <a href="#" class="accommodations__blockResult--link">
+              <img class="accommodations__blockResult--pictureStyle" src="Images/Auberge_la_cannebiere.jpg" alt="Auberge la cannebière" >
+              <div class="accommodations__blockResult--info">
+                <div class="accommodations__blockResult--info-text">
+                  <h3 class="accommodations__blockResult--info-title">Auberge la Cannebière</h3>
+                  <p class="accommodations__blockResult--info-price">Nuit à partir de <strong>25€</strong></p>
+                </div>
+                <p class="accommodations__blockResult--rating">
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
                 </p>
-                <span class="blockResult__rating-accommodation">
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--emptyStar"
-                  ></i>
-                </span>
               </div>
             </a>
           </div>
 
           <!-- Bloc hotel2 -->
-          <div class="blockResult blockResult--accommodation">
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-accommodation
-                  blockResult__picture--secondImage-accommodation
-                "
-              ></div>
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">Hôtel du port</h3>
-                <p class="blockResult__info--priceSize">
-                  Nuit à partir de 52<strong>€</strong>
+          <div class="accommodations__blockResult">
+            <a href="#" class="accommodations__blockResult--link">
+              <img class="accommodations__blockResult--pictureStyle" src="Images/Hotel_du_port.jpg" alt="Hôtel du port" >
+              <div class="accommodations__blockResult--info">
+                <div class="accommodations__blockResult--info-text">
+                  <h3 class="accommodations__blockResult--info-title">Hôtel du port</h3>
+                  <p class="accommodations__blockResult--info-price">Nuit à partir de 52<strong>€</strong></p>
+                </div>
+                <p class="accommodations__blockResult--rating">
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
                 </p>
-                <span class="blockResult__rating-accommodation">
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                </span>
               </div>
             </a>
           </div>
 
-          <div class="blockResult blockResult--accommodation">
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-accommodation
-                  blockResult__picture--thirdImage-accommodation
-                "
-              ></div>
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">
-                  Hôtel les mouettes
-                </h3>
-                <p class="blockResult__info--priceSize">
-                  Nuit à partir de 76<strong>€</strong>
+          <!-- Bloc hotel3 -->
+          <div class="accommodations__blockResult">
+            <a href="#" class="accommodations__blockResult--link">
+              <img class="accommodations__blockResult--pictureStyle" src="Images/Hotel_les_mouettes.jpg" alt="Hôtel les mouettes" >
+              <div class="accommodations__blockResult--info">
+                <div class="accommodations__blockResult--info-text">
+                  <h3 class="accommodations__blockResult--info-title">Hôtel les mouettes</h3>
+                  <p class="accommodations__blockResult--info-price">Nuit à partir de 76<strong>€</strong></p>
+                </div>
+                <p class="accommodations__blockResult--rating">
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
                 </p>
-                <span class="blockResult__rating-accommodation">
-                  <i
-                    class="
-                      fas
-                      fa-star fa-sm fa-sm
-                      blockResult__rating--fullStar
-                    "
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--emptyStar"
-                  ></i>
-                </span>
               </div>
             </a>
           </div>
 
-          <div class="blockResult blockResult--accommodation">
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-accommodation
-                  blockResult__picture--fourthImage-accommodation
-                "
-              ></div>
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">Hôtel de la mer</h3>
-                <p class="blockResult__info--priceSize">
-                  Nuit à partir de 46<strong>€</strong>
+          <!-- Bloc hotel4 -->
+          <div class="accommodations__blockResult">
+            <a href="#" class="accommodations__blockResult--link">
+              <img class="accommodations__blockResult--pictureStyle" src="Images/Hotel_de_la_mer.jpg" alt="Hôtel de la mer" >
+              <div class="accommodations__blockResult--info">
+                <div class="accommodations__blockResult--info-text">
+                  <h3 class="accommodations__blockResult--info-title">Hôtel de la mer</h3>
+                  <p class="accommodations__blockResult--info-price">Nuit à partir de 46<strong>€</strong></p>
+                </div>
+                <p class="accommodations__blockResult--rating">
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
                 </p>
-                <span class="blockResult__rating-accommodation">
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--emptyStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--emptyStar"
-                  ></i>
-                </span>
               </div>
             </a>
           </div>
 
-          <div class="blockResult blockResult--accommodation">
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-accommodation
-                  blockResult__picture--fifthImage-accommodation
-                "
-              ></div>
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">
-                  Auberge le Panier
-                </h3>
-                <p class="blockResult__info--priceSize">
-                  Nuit à partir de <strong>23€</strong>
+          <!-- Bloc hotel5 -->
+          <div class="accommodations__blockResult">
+            <a href="#" class="accommodations__blockResult--link">
+              <img class="accommodations__blockResult--pictureStyle" src="Images/Auberge_le_panier.jpg" alt="Auberge le Panier" >
+              <div class="accommodations__blockResult--info">
+                <div class="accommodations__blockResult--info-text">
+                  <h3 class="accommodations__blockResult--info-title">Auberge le Panier</h3>
+                  <p class="accommodations__blockResult--info-price">Nuit à partir de <strong>23€</strong></p>
+                </div>
+                <p class="accommodations__blockResult--rating">
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
                 </p>
-                <span class="blockResult__rating-accommodation">
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--emptyStar"
-                  ></i>
-                </span>
               </div>
             </a>
           </div>
 
-          <div class="blockResult blockResult--accommodation">
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-accommodation
-                  blockResult__picture--sixthImage-accommodation
-                "
-              ></div>
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">Hôtel chez Amina</h3>
-                <p class="blockResult__info--priceSize">
-                  Nuit à partir de 96<strong>€</strong>
+          <!-- Bloc hotel6 -->
+          <div class="accommodations__blockResult">
+            <a href="#" class="accommodations__blockResult--link">
+              <img class="accommodations__blockResult--pictureStyle" src="Images/Hotel_chez_Amina.jpg" alt="Hôtel chez Amina" >
+              <div class="accommodations__blockResult--info">
+                <div class="accommodations__blockResult--info-text">
+                  <h3 class="accommodations__blockResult--info-title">Hôtel chez Amina</h3>
+                  <p class="accommodations__blockResult--info-price">Nuit à partir de 96<strong>€</strong></p>
+                </div>
+                <p class="accommodations__blockResult--rating">
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
                 </p>
-                <span class="blockResult__rating-accommodation">
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                  <i
-                    class="fas fa-star fa-sm blockResult__rating--fullStar"
-                  ></i>
-                </span>
               </div>
             </a>
           </div>
-          <a href="#" class="accommodations__allResults--moreResults"
-            >Afficher plus</a
-          >
+          <a href="#" class="accommodations__allResults--moreResults">Afficher plus</a>
         </article>
 
+
         <!-- Complément de l'element principal -->
-        <aside class="accommodations__mostPopular">
-          <div class="accommodations__mostPopular--textBox">
-            <h2 class="accommodations__mostPopular--tittle">
+        <aside class="mostPopular__allResults">
+          <div class="mostPopular__allResults--firstLine">
+            <h2 class="mostPopular__allResults--title">
               Les plus populaires
             </h2>
-            <i
-              class="fas fa-lg fa-chart-line accommodations__mostPopular--icon"
-            ></i>
+            <i class="mostPopular__allResults--icon fas fa-lg fa-chart-line"></i>
           </div>
-          <!-- Selection populaires -->
-          <!-- Bloc populaire 1 -->
-          <div class="blockResult blockResult--mostPopular">
-            <div
-              class="
-                blockResult__picture--style-mostPopular
-                blockResult__picture--firstImage-mostPopular
-              "
-            ></div>
-            <a href="#" class="blockResult__lien">
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">
-                  Hôtel Le soleil du matin
-                </h3>
-                <p class="blockResult__info--priceSize">Nuit à partir de 128€</p>
-                <span class="blockResult__rating-mostPopular">
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                </span>
+
+          <!--Bloc populaire 1-->
+          <div class="mostPopular__blockResult">
+            <a href="#" class="mostPopular__blockResult--link">
+              <img class="mostPopular__blockResult--pictureStyle" src="Images/Hotel_le_soleil_du_matin.jpg" alt="Hôtel le soleil du matin" >
+              <div class="mostPopular__blockResult--info">
+                <div class="mostPopular__blockResult--info-text">
+                  <h3 class="mostPopular__blockResult--info-title">Hôtel Le soleil du matin</h3>
+                  <p class="mostPopular__blockResult--info-price">Nuit à partir de 128<strong>€</strong></p>
+                </div>
+                <p class="mostPopular__blockResult--rating">
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-emptyStar"></i>
+                </p>
               </div>
             </a>
           </div>
 
-          <!-- Bloc populaire 2 -->
-          <div class="blockResult blockResult--mostPopular">
-            <div
-              class="
-                blockResult__picture--style-mostPopular
-                blockResult__picture--secondImage-mostPopular
-              "
-            ></div>
-            <a href="#" class="blockResult__lien">
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">
-                  Au coeur de l'eau <br />Chambres d'hôtes
-                </h3>
-                <p class="blockResult__info--priceSize">Nuit à partir de 71€</p>
-                <span class="blockResult__rating-mostPopular">
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--emptyStar"></i>
-                </span>
+          <!--Bloc populaire 2-->
+          <div class="mostPopular__blockResult">
+            <a href="#" class="mostPopular__blockResult--link">
+              <img class="mostPopular__blockResult--pictureStyle" src="Images/Au_coeur_de_leau.jpg" alt="Chambres d'hôtes Au coeur de l'eau" >
+              <div class="mostPopular__blockResult--info">
+                <div class="mostPopular__blockResult--info-text">
+                  <h3 class="mostPopular__blockResult--info-title">Au coeur de l'eau <br>Chambres d'hôtes</h3>
+                  <p class="mostPopular__blockResult--info-price">Nuit à partir de 71<strong>€</strong></p>
+                </div>
+                <p class="mostPopular__blockResult--rating">
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-emptyStar"></i>
+                </p>
               </div>
             </a>
           </div>
 
-          <!-- Bloc populaire 3 -->
-          <div class="blockResult blockResult--mostPopular">
-            <div
-            class="
-              blockResult__picture--style-mostPopular
-              blockResult__picture--thirdImage-mostPopular
-            "
-            >
-            </div>
-            <a href="#" class="blockResult__lien">
-              <div class="blockResult__info blockResult__info--padding">
-                <h3 class="blockResult__info--lineSpacing">
-                  Hôtel Tout bleu et Blanc
-                </h3>
-                <p class="blockResult__info--priceSize">Nuit à partir de 68€</p>
-                <span class="blockResult__rating-mostPopular">
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--fullStar"></i>
-                  <i class="fas fa-star fa-sm blockResult__rating--emptyStar"></i>
-                </span>
+          <!--Bloc populaire 3-->
+          <div class="mostPopular__blockResult">
+            <a href="#" class="mostPopular__blockResult--link">
+              <img class="mostPopular__blockResult--pictureStyle" src="Images/Hotel_tout_bleu_et_blanc.jpg" alt="Hôtel Tout bleu et blanc" >
+              <div class="mostPopular__blockResult--info">
+                <div class="mostPopular__blockResult--info-text">
+                  <h3 class="mostPopular__blockResult--info-title">Hôtel Tout bleu et Blanc</h3>
+                  <p class="mostPopular__blockResult--info-price">Nuit à partir de 68<strong>€</strong></p>
+                </div>
+                <p class="mostPopular__blockResult--rating">
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-emptyStar"></i>
+                </p>
               </div>
             </a>
           </div>
         </aside>
       </section>
 
+      
       <!-- Section Activités -->
       <section id="activites" class="activities">
-        <h2 class="activities__tittle">Activités à Marseille</h2>
+        <h2 class="activities__title">Activités à Marseille</h2>
 
-        <article class="activities__results">
-          <div
-            class="
-              blockResult
-              blockResult--activities
-              blockResult--activities-firstBlock
-            "
-          >
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-activities
-                  blockResult__picture--firstImage-activities
-                "
-              ></div>
-              <h3
-                class="
-                  blockResult__info--padding
-                  blockResult__info--lineSpacing-activities
-                "
-              >
-                Vieux Port
-              </h3>
-            </a>
+        <article class="activities__allResults">
+
+          <div class="activities__allResults--halfPart">
+            <div class="activities__blockResult activities__blockResult--first">
+              <a href="#" class="activities__blockResult--link">
+                <img class="activities__blockResult--pictureStyle" src="Images/Vieux_port.jpg" alt="Vue sur le Vieux Port">
+                <h3 class="activities__blockResult--title">Vieux Port</h3>
+              </a>
+            </div>
+            <div class="activities__blockResult activities__blockResult--second">
+              <a href="#" class="activities__blockResult--link">
+                <img class="activities__blockResult--pictureStyle" src="Images/Fort_de_pomegues.jpg" alt="Vue du Fort de Pomègues">
+                <h3 class="activities__blockResult--title">Fort de Pomègues</h3>
+              </a>
+            </div>
+            <div class="activities__blockResult activities__blockResult--third">
+              <a href="#" class="activities__blockResult--link">
+                <img class="activities__blockResult--pictureStyle" src="Images/Iles_du_frioul.jpg" alt="Iles du Frioul vues de Marseille">
+                <h3 class="activities__blockResult--title">Îles du Frioul</h3>
+              </a>
+            </div>
           </div>
 
-          <div
-            class="
-              blockResult
-              blockResult--activities
-              blockResult--activities-secondBlock
-            "
-          >
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-activities
-                  blockResult__picture--secondImage-activities
-                "
-              ></div>
-              <h3
-                class="
-                  blockResult__info--padding
-                  blockResult__info--lineSpacing-activities
-                "
-              >
-                Fort de Pomègues
-              </h3>
-            </a>
+          <div class="activities__allResults--halfPart">
+            <div class="activities__blockResult activities__blockResult--fourth">
+              <a href="#" class="activities__blockResult--link">
+                <img class="activities__blockResult--pictureStyle" src="Images/Parc_national_des_calanques.jpg" alt="Parc National des Calanques">
+                <h3 class="activities__blockResult--title">Parc National des Calanques</h3>
+              </a>
+            </div>
+            <div class="activities__blockResult activities__blockResult--fifth">
+              <a href="#" class="activities__blockResult--link">
+                <img class="activities__blockResult--pictureStyle" src="Images/Notre_Dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde">
+                <h3 class="activities__blockResult--title">Notre-Dame-de-la-Garde</h3>
+              </a>
+            </div>
+            <div class="activities__blockResult activities__blockResult--sixth">
+              <a href="#" class="activities__blockResult--link">
+                <img class="activities__blockResult--pictureStyle" src="Images/Parc_longchamp.jpg" alt="Parc Longchamp">
+                <h3 class="activities__blockResult--title">Parc Longchamp</h3>
+              </a>
+             </div>
           </div>
-
-          <div
-            class="
-              blockResult
-              blockResult--activities
-              blockResult--activities-thirdBlock
-            "
-          >
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-activities
-                  blockResult__picture--thirdImage-activities
-                "
-              ></div>
-              <h3
-                class="
-                  blockResult__info--padding
-                  blockResult__info--lineSpacing-activities
-                "
-              >
-                Îles du Frioul
-              </h3>
-            </a>
-          </div>
-
-          <div
-            class="
-              blockResult
-              blockResult--activities
-              blockResult--activities-fourthBlock
-            "
-          >
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-activities
-                  blockResult__picture--fourthImage-activities
-                "
-              ></div>
-              <h3
-                class="
-                  blockResult__info--padding
-                  blockResult__info--lineSpacing-activities
-                "
-              >
-                Parc National des Calanques
-              </h3>
-            </a>
-          </div>
-
-          <div
-            class="
-              blockResult
-              blockResult--activities
-              blockResult--activities-fifthBlock
-            "
-          >
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-activities
-                  blockResult__picture--fifthImage-activities
-                "
-              ></div>
-              <h3
-                class="
-                  blockResult__info--padding
-                  blockResult__info--lineSpacing-activities
-                "
-              >
-                Notre-Dame-de-la-Garde
-              </h3>
-            </a>
-          </div>
-
-          <div
-            class="
-              blockResult
-              blockResult--activities
-              blockResult--activities-sixthBlock
-            "
-          >
-            <a href="#" class="blockResult__lien">
-              <div
-                class="
-                  blockResult__picture--style-activities
-                  blockResult__picture--sixthImage-activities
-                "
-              ></div>
-              <h3
-                class="
-                  blockResult__info--padding
-                  blockResult__info--lineSpacing-activities
-                "
-              >
-                Parc Longchamp
-              </h3>
-            </a>
-          </div>
+          
         </article>
       </section>
     </main>

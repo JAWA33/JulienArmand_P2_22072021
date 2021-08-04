@@ -27,8 +27,6 @@ body {
 h1 {
   font-weight: 600;
   font-size: 1.35em;
-
-  margin: 35px 0px 10px 0px;
 }
 
 h2 {
@@ -53,7 +51,7 @@ li {
 
 /** Marge externe de la page */
 
-main {
+header, main {
   margin: 0px 50px;
 }
 
@@ -61,17 +59,17 @@ main {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 95%;
   top: 0;
   background-color: white;
-  padding: 2px 40px 30px 50px;
+  padding-top: 2px;
+  z-index: 1;
 }
 
 /** Décalage des sections pour alignement bas du header (ancrage) */
 
-#hebergements,
-#activites {
-  padding-top: 430px;
+#search{
+  padding-top: 80px;
 }
 
 /*! Style du header ------------------------------------------------------------*/
@@ -123,7 +121,14 @@ nav {
   color: #deebff;
 }
 
+/*! Style du main ----------------------------------------------------------------------------------------*/
+
+/*! Section Search */
 /** Réglages de la recherche */
+
+.search__title{
+  margin: 35px 0px 10px 0px;
+}
 
 .citySelection {
   display: flex;
@@ -191,6 +196,8 @@ nav {
   color: #0065fc;
 }
 
+
+/*! Section Filter -----------------------------------------*/
 /** Formulaires de filtres */
 
 .filters {
@@ -200,8 +207,8 @@ nav {
   margin-bottom: 35px;
 }
 
-.filters__tittle {
-  font-weight: bold;
+.filters__title {
+  font-weight: 600;
   font-size: 1.15em;
   margin-right: 5px;
   padding-left: 10px;
@@ -316,8 +323,7 @@ nav {
   padding-left: 5px;
 }
 
-/*! Style du main ----------------------------------------------------------------------------------------*/
-
+/*! Section Accommodations -----------------------------------*/
 /** Section hebergements*/
 
 .accommodations {
@@ -325,11 +331,9 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-
-  margin-bottom: -400px;
 }
 
-.accommodations-displayNone {
+.accommodations__sectionTitle--displayNone {
   display: none; /*? pour validateur W3C */
 }
 
@@ -339,7 +343,7 @@ nav {
   justify-content: space-between;
   align-content: flex-start;
 
-  width: calc(97% - 420px);
+  width: 72%;
 
   background-color: #f2f2f2;
   border-radius: 25px;
@@ -353,7 +357,7 @@ nav {
 
 .accommodations__allResults--moreResults {
   width: 100%;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1em;
   margin: 25px 20px;
 }
@@ -364,263 +368,275 @@ nav {
 }
 
 /** Création du bloc résultats type */
-.blockResult {
+.accommodations__blockResult {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  width: 28%;
+  /*min-width: 246px;*/
+  height: auto;
+  margin: 15px;
+  padding: 5px;
 
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2); /*? Style */
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-.blockResult:hover {
+.accommodations__blockResult:hover {
   background-color: #deebff;
   color: #0065fc;
-  cursor: pointer;
+  transform: scale(1.05);
 }
 
-.blockResult__lien {
+.accommodations__blockResult--link {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
 
-.blockResult--accommodation {
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  width: 28%;
-  min-width: 246px;
-  height: 199px;
-  margin: 15px;
-  padding: 5px;
-}
 
 /** Gestion des images d'hébergement **/
-.blockResult__picture--style-accommodation {
+.accommodations__blockResult--pictureStyle {
   width: 100%;
-  min-width: 237px;
+  /*min-width: 237px;*/
   height: 114px;
   border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 
-.blockResult__picture--firstImage-accommodation {
-  background: no-repeat center/cover url("Images/Auberge_la_cannebiere.jpg");
-}
-
-.blockResult__picture--secondImage-accommodation {
-  background: no-repeat center/cover url("Images/Hotel_du_port.jpg");
-}
-
-.blockResult__picture--thirdImage-accommodation {
-  background: no-repeat center/cover url("Images/Hotel_les_mouettes.jpg");
-}
-
-.blockResult__picture--fourthImage-accommodation {
-  background: no-repeat center/cover url("Images/Hotel_de_la_mer.jpg");
-}
-
-.blockResult__picture--fifthImage-accommodation {
-  background: no-repeat center/cover url("Images/Auberge_le_panier.jpg");
-}
-
-.blockResult__picture--sixthImage-accommodation {
-  background: no-repeat center/cover url("Images/Hotel_chez_Amina.jpg");
-}
-
+/*? RESTE A MODIFIER ?*/
 /** Gestion du texte */
-.blockResult__info {
+.accommodations__blockResult--info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-around;
-}
-
-.blockResult__info--padding {
   padding: 10px 15px;
 }
 
-.blockResult__info--lineSpacing {
+.accommodations__blockResult--info-text {
   margin-bottom: 5px;
 }
 
-.blockResult__info--priceSize {
+.accommodations__blockResult--info-price {
   font-size: 0.9em;
 }
 
-.blockResult__info--priceSize strong {
+.accommodations__blockResult--info-price strong {
   font-weight: 600;
 }
 
 /** Bloc notation */
-.blockResult__rating-accommodation {
+.accommodations__blockResult--rating {
   font-size: 0.9em;
   margin-top: 5px;
 }
 
-.blockResult__rating--fullStar {
+.accommodations__blockResult--rating-fullStar {
   color: #0065fc;
 }
 
-.blockResult__rating--emptyStar {
+.accommodations__blockResult--rating-emptyStar {
   color: #dfdfdf;
 }
 
+
+/*! Section mostPopular ---------------------------------------*/
 /** Section les plus populaires */
-.blockResult--mostPopular {
-  flex-direction: row; /*? Orientation */
-  justify-content: flex-start; /*? Orientation */
-  align-items: flex-start; /*? Orientation */
-
-  height: 140px; /*? Dimension bloc */
-  margin: 15px; /*? Dimension bloc */
-  padding: 5px; /*? Dimension bloc */
-}
-
-/** Gestion des images les plus populaires **/
-.blockResult__picture--style-mostPopular {
-  width: 40%;
-  min-width: 130px;
-  height: 100%;
-  border-radius: 15px 0px 0px 15px;
-}
-
-.blockResult__picture--firstImage-mostPopular {
-  background: no-repeat center/cover url("Images/Hotel_le_soleil_du_matin.jpg");
-}
-
-.blockResult__picture--secondImage-mostPopular {
-  background: no-repeat center/cover url("Images/Au_coeur_de_leau.jpg");
-}
-
-.blockResult__picture--thirdImage-mostPopular {
-  background: no-repeat center/cover url("Images/Hotel_tout_bleu_et_blanc.jpg");
-}
-
-/** Bloc notation Les plus populaires */
-.blockResult__rating-mostPopular {
-  font-size: 0.8em;
-  margin-top: 40px;
-}
-
-/** Section les plus populaires */
-.accommodations__mostPopular {
+.mostPopular__allResults {
   display: flex;
   flex-direction: column;
+ 
+  width: 25%;
 
-  width: 420px;
   background-color: #f2f2f2;
   border-radius: 25px;
-  padding: 20px;
+  padding: 25px;
 }
 
-.accommodations__mostPopular--textBox {
+.mostPopular__allResults--firstLine{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
+  margin: 20px;
+}
+
+.mostPopular__allResults--title{
+  /*? Ajout si nécessaire */
+}
+
+.mostPopular__allResults--icon{
+  font-size: 1.5em;
+}
+
+
+/** Gestion des blocs les plus populaires */
+
+.mostPopular__blockResult{
+
+  height: 147px;
+
+  margin: 15px;
+  padding: 5px;
+
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2);
+  
+}
+
+.mostPopular__blockResult:hover{
+  background-color: #deebff;
+  color: #0065fc;
+  transform: scale(1.05);
+}
+
+.mostPopular__blockResult--link {
+  display: inline-flex;
   width: 100%;
-  padding-right: 20px;
+  height: 100%;
 }
 
-.accommodations__mostPopular--tittle {
-  width: 70%;
-  margin: 20px 20px;
+.mostPopular__blockResult--pictureStyle {
+  width: 38%;
+  height: 100%;
+  border-radius: 15px 0px 0px 15px;
+  object-fit:cover;
+  /*! A vérifier : Problème d'images avec le 3ième Bloc */
 }
 
-.accommodations__mostPopular--icon {
-  font-size: 1.4em;
+.mostPopular__blockResult--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-around;
+  padding: 10px 15px;
 }
 
+.mostPopular__blockResult--info-text {
+  /*? Ajout si nécessaire */
+}
+
+.mostPopular__blockResult--info-title {
+  /*? Ajout si nécessaire */
+}
+
+.mostPopular__blockResult--info-price {
+  font-size: 0.9em;
+}
+
+.mostPopular__blockResult--info-price strong {
+  font-weight: 600;
+}
+
+.mostPopular__blockResult--rating{
+  font-size: 0.8em;
+}
+
+.mostPopular__blockResult--rating-fullStar {
+  color: #0065fc;
+}
+
+.mostPopular__blockResult--rating-emptyStar {
+  color: #dfdfdf;
+}
+
+
+/*! Section Activities ---------------------------------------*/
 /** Section Activités **/
 
-#activites {
-  margin-top: -380px;
+.activities {
+  margin-top: 30px;
 }
-.activities__tittle {
+
+.activities__title {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.activities__allResults{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   width: 100%;
 }
 
-.activities__results {
+.activities__allResults--halfPart{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  
+  width: 48.5%;
+  height: 60vh;
+}
 
-  height: 446px;
+.activities__blockResult{
+  
+  width: 47.5%;
+
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.activities__blockResult--link{
+  display: inline-block;
   width: 100%;
-
-  margin-top: 25px;
-}
-
-/** Modification des blocs pour activités **/
-.blockResult--activities {
-  flex-direction: column; /*? Orientation */
-  justify-content: space-between; /*? Orientation */
-  align-content: flex-start; /*? Orientation */
-
-  width: 22.5%; /*? Dimension bloc */
-}
-
-.blockResult--activities-firstBlock {
   height: 100%;
 }
-.blockResult--activities-secondBlock {
+
+.activities__blockResult:hover {
+  background-color: #deebff;
+  color: #0065fc;
+  transform: scale(1.05);
+}
+
+.activities__blockResult--first{
+  height: 100%;
+}
+
+.activities__blockResult--second{
   height: 55%;
 }
-.blockResult--activities-thirdBlock {
+
+.activities__blockResult--third{
   height: 35%;
 }
-.blockResult--activities-fourthBlock {
+
+.activities__blockResult--fourth{
   height: 100%;
 }
-.blockResult--activities-fifthBlock {
+
+.activities__blockResult--fifth{
   height: 40%;
 }
-.blockResult--activities-sixthBlock {
+
+.activities__blockResult--sixth{
   height: 50%;
 }
 
-/** Gestion des images les plus populaires **/
-.blockResult__picture--style-activities {
+.activities__blockResult--pictureStyle{
   height: calc(100% - 60px);
   width: 100%;
+  object-fit: cover;
 
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
-.blockResult__picture--firstImage-activities {
-  background: no-repeat center/cover url("Images/Vieux_port.jpg");
-}
-
-.blockResult__picture--secondImage-activities {
-  background: no-repeat center/cover url("Images/Fort_de_pomegues.jpg");
-}
-
-.blockResult__picture--thirdImage-activities {
-  background: no-repeat center/cover url("Images/Iles_du_frioul.jpg");
-}
-
-.blockResult__picture--fourthImage-activities {
-  background: no-repeat center/cover
-    url("Images/Parc_national_des_calanques.jpg");
-}
-
-.blockResult__picture--fifthImage-activities {
-  background: no-repeat center/cover url("Images/Notre_de_la_garde.jpg");
-}
-
-.blockResult__picture--sixthImage-activities {
-  background: no-repeat center/cover url("Images/Parc_longchamp.jpg");
-}
-
-.blockResult__info--lineSpacing-activities {
+.activities__blockResult--title {
   display: flex;
   align-items: center;
 
   height: 60px;
+  padding-left: 20px;
 }
 
 /*! Style du footer */
@@ -657,9 +673,9 @@ footer {
 
 /*! Responsive tous écrans */
 
-
+/*
 @media screen and (max-width: 1437px) {
-  /** footer */
+  
   footer {
     justify-content: space-around;
     align-content: space-around;
@@ -667,14 +683,14 @@ footer {
     padding: 40px;
   }
 
-  /** Hebergements */
+   
   .blockResult--accommodation {
     width: 45%;
   }
 }
 
 @media screen and (max-width: 1205px) {
-  /** Hebergements */
+  
   .blockResult--accommodation {
     width: 100%;
   }
@@ -686,7 +702,7 @@ footer {
 @media screen and (max-width: 1175px) {
 
   
-  /** Header */
+  
   .filters {
     flex-wrap: wrap;
   }
@@ -757,7 +773,7 @@ footer {
 }
 
 @media screen and (max-width: 909px) {
-  /** Plus populaires */
+  
   .accommodations {
     flex-direction: column-reverse;
     margin-bottom: 400px;
@@ -782,7 +798,7 @@ footer {
     margin-left: 40px;
   }
 
-  /** footer */
+  
   footer {
     flex-direction: column;
   }
@@ -791,7 +807,7 @@ footer {
     margin-bottom: 40px;
   }
 
-  /** Hebergements */
+  
   .blockResult--accommodation {
     width: 100%;
   }
@@ -806,7 +822,7 @@ footer {
 @media screen and (max-width: 710px) {
 
 
-  /** Changement de la nav */
+  
   nav {
     flex-wrap: wrap;
     padding-top: 0px;
@@ -1014,4 +1030,4 @@ footer {
   #activites {
     margin-bottom: 40px;
   }
-}
+} */
