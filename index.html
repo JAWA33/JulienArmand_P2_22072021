@@ -30,9 +30,9 @@
     <header>
       <!-- Navigation de la page -->
       <nav>
-        <a href="#search"
-          ><img class="logo" src="Images/Reservia.svg" alt="Logo_Reservia"
-        /></a>
+        <a href="#search">
+          <img class="logo" src="Images/Reservia.svg" alt="Logo_Reservia"/>
+        </a>
         <ul class="menu">
           <li class="menu__link"><a href="#hebergements">Hébergements</a></li>
           <li class="menu__link"><a href="#activites">Activités</a></li>
@@ -55,13 +55,14 @@
           </button>
           <input type="text" class="citySelection__choose" placeholder="Marseille, France"/>
           <button class="citySelection__send">
-            <i class="citySelection__send--icon fas fa-lg fa-search "></i>
+            <i id="searchIcon" class="fas fa-lg fa-search "></i>
             <span class="citySelection__send--text">Rechercher</span>
           </button>
         </form>
       </section>
 
       <section id="filter">
+        <h2 class="displayNone">Filter</h2>
         <!-- Création du formulaire de filtration -->
         <form class="filters" name="filters" action="#" method="get">
           <label class="filters__title">Filtres</label>
@@ -126,7 +127,7 @@
       <!-- Section Hébergements -->
       <section id="hebergements" class="accommodations">
         <!--! pourvalidateur W3C : Titre à donner à la section-->
-        <h2 class="accommodations__sectionTitle--displayNone">Hebergements</h2>
+        <h2 class="displayNone">Hebergements</h2>
         <!-- Selection Hebergements -->
         <article class="accommodations__allResults">
           <h2 class="accommodations__allResults--tittle">
@@ -167,7 +168,7 @@
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
-                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
                 </p>
               </div>
             </a>
@@ -206,7 +207,7 @@
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
-                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
                 </p>
               </div>
@@ -247,7 +248,7 @@
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
                   <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
-                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-emptyStar"></i>
+                  <i class="fas fa-star fa-sm accommodations__blockResult--rating-fullStar"></i>
                 </p>
               </div>
             </a>
@@ -259,7 +260,7 @@
         <!-- Complément de l'element principal -->
         <aside class="mostPopular__allResults">
           <div class="mostPopular__allResults--firstLine">
-            <h2 class="mostPopular__allResults--title">
+            <h2>
               Les plus populaires
             </h2>
             <i class="mostPopular__allResults--icon fas fa-lg fa-chart-line"></i>
@@ -279,7 +280,7 @@
                   <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
                   <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
                   <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
-                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-emptyStar"></i>
+                  <i class="fas fa-star fa-sm mostPopular__blockResult--rating-fullStar"></i>
                 </p>
               </div>
             </a>
@@ -382,38 +383,40 @@
 
     <!-- Création pied de la page -->
     <footer>
-      <ul class="footerList">
-        <li class="footerList__tittle">A propos</li>
-        <li class="footerList__lign">
-          <a href="#">Fonctionnement du site</a>
-        </li>
-        <li class="footerList__lign">
-          <a href="#">Conditions générales de vente</a>
-        </li>
-        <li class="footerList__lign">
-          <a href="#">Données et confidentialité</a>
-        </li>
-      </ul>
+      <div class="endPage">
+        <ul class="endPage__list">
+          <li class="endPage__list--tittle">A propos</li>
+          <li class="endPage__list--lign">
+            <a href="#">Fonctionnement du site</a>
+          </li>
+          <li class="endPage__list--lign">
+            <a href="#">Conditions générales de vente</a>
+          </li>
+          <li class="endPage__list--lign">
+            <a href="#">Données et confidentialité</a>
+          </li>
+        </ul>
 
-      <ul class="footerList">
-        <li class="footerList__tittle">Nos hébergements</li>
-        <li class="footerList__lign">
-          <a href="#">Charte qualité</a>
-        </li>
-        <li class="footerList__lign">
-          <a href="#">Soumettre votre hôtel</a>
-        </li>
-      </ul>
+        <ul class="endPage__list">
+          <li class="endPage__list--tittle">Nos hébergements</li>
+          <li class="endPage__list--lign">
+            <a href="#">Charte qualité</a>
+          </li>
+          <li class="endPage__list--lign">
+            <a href="#">Soumettre votre hôtel</a>
+          </li>
+        </ul>
 
-      <ul class="footerList">
-        <li class="footerList__tittle">Assistance</li>
-        <li class="footerList__lign">
-          <a href="#">Centre d'aide</a>
-        </li>
-        <li class="footerList__lign">
-          <a href="#">Nous contacter</a>
-        </li>
-      </ul>
+        <ul class="endPage__list">
+          <li class="endPage__list--tittle">Assistance</li>
+          <li class="endPage__list--lign">
+            <a href="#">Centre d'aide</a>
+          </li>
+          <li class="endPage__list--lign">
+            <a href="#">Nous contacter</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
