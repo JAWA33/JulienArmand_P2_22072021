@@ -61,6 +61,7 @@ header {
   position: fixed;
   width: 95%;
   top: 0;
+  left: 0;
   background-color: rgb(254, 254, 254);
   padding-top: 2px;
   z-index: 1;
@@ -84,7 +85,6 @@ header {
 #activites{
   padding-top: 100px;
 }
-
 
 .displayNone {
   display: none; /* pour validateur W3C */
@@ -694,6 +694,15 @@ footer {
 
 /*! Responsive tous écrans ----------------------------*/
 
+@media screen and (min-width: 1640px) {
+
+  main, nav, .endPage{
+    width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
 
 @media screen and (max-width: 1350px) {
   
@@ -986,7 +995,12 @@ footer {
   }
 
   #hebergements{
-    padding-top: 100px;
+    padding-top: 130px;
+    margin-bottom: -140px;
+  }
+
+  #activites{
+    padding-top: 140px;
   }
 
 }
