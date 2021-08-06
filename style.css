@@ -770,6 +770,22 @@ footer {
     width: 100%;
   }
 
+  .activities__blockResult--second{
+    height: 47%;
+  }
+  
+  .activities__blockResult--third{
+    height: 47%;
+  }
+
+  .activities__blockResult--fifth{
+    height: 47%;
+  }
+  
+  .activities__blockResult--sixth{
+    height: 47%;
+  }
+
 }
 
 
