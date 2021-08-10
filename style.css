@@ -51,7 +51,8 @@ li {
 
 /** Marge externe de la page */
 
-header, main {
+header,
+main {
   margin: 0px 50px;
 }
 
@@ -69,20 +70,20 @@ header {
 
 /** Décalage des sections pour alignement bas du header (ancrage) */
 
-#search{
+#search {
   padding-top: 80px;
 }
 
-#filter{
+#filter {
   margin-bottom: -70px;
 }
 
-#hebergements{
+#hebergements {
   padding-top: 100px;
   margin-bottom: -70px;
 }
 
-#activites{
+#activites {
   padding-top: 100px;
 }
 
@@ -106,7 +107,7 @@ nav {
   margin-top: 30px;
 }
 
-.logo:hover{
+.logo:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -149,7 +150,7 @@ nav {
 /*! Section Search */
 /** Réglages de la recherche */
 
-.search__title{
+.search__title {
   margin: 35px 0px 10px 0px;
 }
 
@@ -219,7 +220,6 @@ nav {
   color: #0065fc;
 }
 
-
 /*! Section Filter -----------------------------------------*/
 /** Formulaires de filtres */
 
@@ -228,7 +228,7 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  
+
   margin-bottom: 35px;
 }
 
@@ -396,7 +396,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  
+
   width: 29%;
   height: auto;
   margin: 15px;
@@ -418,7 +418,6 @@ nav {
   width: 100%;
   height: 100%;
 }
-
 
 /** Gestion des images d'hébergement **/
 .accommodations__blockResult--pictureStyle {
@@ -465,13 +464,12 @@ nav {
   color: #dfdfdf;
 }
 
-
 /*! Section mostPopular ---------------------------------------*/
 /** Section les plus populaires */
 .mostPopular__allResults {
   display: flex;
   flex-direction: column;
- 
+
   width: 32%;
 
   background-color: #f2f2f2;
@@ -479,7 +477,7 @@ nav {
   padding: 25px;
 }
 
-.mostPopular__allResults--firstLine{
+.mostPopular__allResults--firstLine {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -488,15 +486,13 @@ nav {
   margin: 20px 15px;
 }
 
-.mostPopular__allResults--icon{
+.mostPopular__allResults--icon {
   font-size: 1.5em;
 }
 
-
 /** Gestion des blocs les plus populaires */
 
-.mostPopular__blockResult{
-
+.mostPopular__blockResult {
   height: 147px;
 
   margin: 15px;
@@ -505,10 +501,9 @@ nav {
   border-radius: 20px;
   background-color: rgb(254, 254, 254);
   box-shadow: 0px 4px 10px 1px rgba(2, 2, 2, 0.2);
-  
 }
 
-.mostPopular__blockResult:hover{
+.mostPopular__blockResult:hover {
   background-color: #deebff;
   color: #0065fc;
   transform: scale(1.05);
@@ -525,7 +520,7 @@ nav {
   min-width: 125px;
   height: 100%;
   border-radius: 15px 0px 0px 15px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .mostPopular__blockResult--info {
@@ -537,11 +532,11 @@ nav {
 }
 
 .mostPopular__blockResult--info-text {
- margin-left: 5px;
+  margin-left: 5px;
 }
 
 .mostPopular__blockResult--info-title {
-   margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .mostPopular__blockResult--info-price {
@@ -552,7 +547,7 @@ nav {
   font-weight: 600;
 }
 
-.mostPopular__blockResult--rating{
+.mostPopular__blockResult--rating {
   font-size: 0.8em;
 }
 
@@ -563,7 +558,6 @@ nav {
 .mostPopular__blockResult--rating-emptyStar {
   color: #dfdfdf;
 }
-
 
 /*! Section Activities ---------------------------------------*/
 /** Section Activités **/
@@ -577,7 +571,7 @@ nav {
   margin-bottom: 30px;
 }
 
-.activities__allResults{
+.activities__allResults {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -585,19 +579,18 @@ nav {
   width: 100%;
 }
 
-.activities__allResults--halfPart{
+.activities__allResults--halfPart {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  
+
   width: 48.5%;
-  height: 35vh;
+  height: 440px;
 }
 
-.activities__blockResult{
-  
+.activities__blockResult {
   width: 47.5%;
 
   border-radius: 20px;
@@ -605,7 +598,7 @@ nav {
   box-shadow: 0px 4px 10px 1px rgba(2, 2, 2, 0.2);
 }
 
-.activities__blockResult--link{
+.activities__blockResult--link {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -617,31 +610,31 @@ nav {
   transform: scale(1.05);
 }
 
-.activities__blockResult--first{
+.activities__blockResult--first {
   height: 100%;
 }
 
-.activities__blockResult--second{
+.activities__blockResult--second {
   height: 55%;
 }
 
-.activities__blockResult--third{
+.activities__blockResult--third {
   height: 35%;
 }
 
-.activities__blockResult--fourth{
+.activities__blockResult--fourth {
   height: 100%;
 }
 
-.activities__blockResult--fifth{
+.activities__blockResult--fifth {
   height: 40%;
 }
 
-.activities__blockResult--sixth{
+.activities__blockResult--sixth {
   height: 50%;
 }
 
-.activities__blockResult--pictureStyle{
+.activities__blockResult--pictureStyle {
   height: calc(100% - 50px);
   width: 100%;
   object-fit: cover;
@@ -666,7 +659,7 @@ footer {
   width: 100vw;
 }
 
-.endPage{
+.endPage {
   display: flex;
   justify-content: space-between;
 
@@ -695,46 +688,44 @@ footer {
 /*! Responsive tous écrans ----------------------------*/
 
 @media screen and (min-width: 1640px) {
-
-  main, nav, .endPage{
+  main,
+  nav,
+  .endPage {
     width: 1500px;
     margin-right: auto;
     margin-left: auto;
   }
-
 }
 
-@media screen and (max-width: 1350px) {
-  
-  .accommodations{
+@media screen and (max-width: 1300px) {
+  .accommodations {
     flex-direction: column-reverse;
   }
 
-  .accommodations__allResults{
+  .accommodations__allResults {
     width: 100%;
     margin-top: 30px;
   }
 
-  .mostPopular__allResults{
+  .mostPopular__allResults {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
   }
 
-  .mostPopular__allResults--firstLine{
+  .mostPopular__allResults--firstLine {
     width: 100%;
   }
 
-  .mostPopular__blockResult{
-    width: 28%;
+  .mostPopular__blockResult {
+    width: 30%;
   }
 }
 
-
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1200px) {
   
-  .filters__title{
+  .filters__title {
     width: 100%;
     height: initial;
 
@@ -742,61 +733,59 @@ footer {
     margin-bottom: 20px;
   }
 
-  .accommodations__blockResult{
+  .accommodations__blockResult {
     width: 45%;
   }
-  .mostPopular__allResults{
+
+  .mostPopular__allResults {
     flex-direction: column;
   }
 
-  .mostPopular__allResults--firstLine{
-    width: 95%;
+  .mostPopular__allResults--firstLine {
+    width: auto;
   }
 
-  .mostPopular__blockResult{
-    width: 95%;
+  .mostPopular__blockResult {
+    width: auto;
   }
 
-  .activities__allResults{
+  .activities__allResults {
     flex-direction: column;
   }
 
-  .activities__allResults--halfPart{
+  .activities__allResults--halfPart {
     width: 100%;
     margin-bottom: 30px;
   }
 
-  .endPage{
+  .endPage {
     width: 100%;
   }
 
-  .activities__blockResult--second{
-    height: 47%;
-  }
-  
-  .activities__blockResult--third{
+  .activities__blockResult--second {
     height: 47%;
   }
 
-  .activities__blockResult--fifth{
-    height: 47%;
-  }
-  
-  .activities__blockResult--sixth{
+  .activities__blockResult--third {
     height: 47%;
   }
 
+  .activities__blockResult--fifth {
+    height: 47%;
+  }
+
+  .activities__blockResult--sixth {
+    height: 47%;
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-
   header {
     width: 100%;
     margin: 0;
   }
 
-  main{
+  main {
     margin: 0px 20px;
   }
 
@@ -804,7 +793,7 @@ footer {
     flex-wrap: wrap;
   }
 
-  .logo{
+  .logo {
     margin-left: 20px;
     margin-top: 20px;
   }
@@ -847,8 +836,8 @@ footer {
     border-bottom: none;
   }
 
-  .accommodations__blockResult{
-    width: 100%;
+  .accommodations__blockResult {
+    width: 42%;
   }
 
   .endPage {
@@ -860,36 +849,34 @@ footer {
     margin-bottom: 40px;
   }
 
-  #search{
+  #search {
     padding-top: 130px;
   }
-  
-  #filter{
+
+  #filter {
     margin-bottom: -100px;
   }
-  
-  #hebergements{
+
+  #hebergements {
     padding-top: 120px;
     margin-bottom: -100px;
   }
-  
-  #activites{
+
+  #activites {
     padding-top: 100px;
   }
-
 }
 
-@media screen and (max-width: 440px) {
-  
-  main{
+@media screen and (max-width: 500px) {
+  main {
     margin: 0;
   }
 
-  #search{
+  #search {
     margin: 0px 20px;
   }
 
-  #filter{
+  #filter {
     margin-left: 20px;
   }
 
@@ -903,7 +890,7 @@ footer {
     margin-bottom: 30px;
   }
 
-  .citySelection__map{
+  .citySelection__map {
     border-radius: 10px 0px 0px 10px;
   }
 
@@ -916,12 +903,12 @@ footer {
     width: 55px;
     border-radius: 15px;
   }
-  
+
   .citySelection__send--text {
     display: none;
   }
 
-  #searchIcon{
+  #searchIcon {
     display: initial;
   }
 
@@ -929,95 +916,102 @@ footer {
     margin-bottom: 20px;
   }
 
-  .filters__filterButton{
+  .filters__filterButton {
     margin-right: 10px;
     margin-bottom: 10px;
   }
 
-  .filters__filterButton--themeText{
+  .filters__filterButton--themeText {
     font-size: 1.1em;
     padding: 15px 15px 15px 55px;
   }
 
-  .filters__results{
-    align-items:initial;
+  .filters__results {
+    align-items: initial;
   }
 
-  .filters__results--infoText{
+  .filters__results--infoText {
     font-size: 0.95em;
     padding-top: 5px;
-    margin-right:15px;
+    margin-right: 15px;
   }
 
-  .mostPopular__allResults{
+  .mostPopular__allResults {
     border-radius: 0;
     padding: 15px 10px 30px 10px;
   }
 
-  .mostPopular__blockResult{
+  .mostPopular__blockResult {
     height: 140px;
     margin: 7px;
   }
 
-  .accommodations__allResults{
+  .mostPopular__allResults--firstLine {
+    margin: 20px 7px;
+  }
+
+  .mostPopular__blockResult--pictureStyle {
+    min-width: 105px;
+  }
+
+  .accommodations__allResults {
     border-radius: 0;
     background-color: transparent;
 
     margin: 0;
     padding: 15px 0;
-
   }
 
-  .accommodations__blockResult{
+  .accommodations__blockResult {
+    width: 100%;
     margin-bottom: 0;
   }
 
-  .accommodations__blockResult--info{
+  .accommodations__blockResult--info {
     padding: 5px 10px;
   }
 
-  .accommodations__blockResult--rating{
+  .accommodations__blockResult--rating {
     font-size: 0.8em;
-    margin-top:0;
+    margin-top: 0;
   }
 
-  #activites{
+  #activites {
     margin-left: 20px;
     margin-right: 20px;
 
     padding-top: 80px;
   }
 
-  .activities__allResults--halfPart{
+  .activities__allResults--halfPart {
     width: 100%;
     height: initial;
     margin-bottom: 0;
   }
 
-  .activities__blockResult{
+  .activities__blockResult {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .activities__blockResult--pictureStyle{
+  .activities__blockResult--pictureStyle {
     height: 140px;
   }
 
-  footer{
+  footer {
     margin-top: 30px;
   }
 
-  .endPage{
+  .endPage {
     padding: 45px 20px 0px 20px;
   }
 
-  #hebergements{
+  #hebergements {
     padding-top: 130px;
     margin-bottom: -140px;
   }
 
-  #activites{
+  #activites {
     padding-top: 140px;
   }
-
 }
