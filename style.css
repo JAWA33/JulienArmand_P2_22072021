@@ -724,7 +724,6 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-  
   .filters__title {
     width: 100%;
     height: initial;
@@ -858,12 +857,12 @@ footer {
   }
 
   #hebergements {
-    padding-top: 120px;
-    margin-bottom: -100px;
+    padding-top: 140px;
+    margin-bottom: -120px;
   }
 
   #activites {
-    padding-top: 100px;
+    padding-top: 140px;
   }
 }
 
